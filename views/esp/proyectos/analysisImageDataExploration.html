@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../../src/style/general.css">
+    <link rel="stylesheet" href="../../../src/style/projectPage.css">
+</head>
+<body>
+
+    <header>
+        <div class="headerLogo" onclick="javascript:location.href='../../../index_esp.html'">
+            <img class="headerLogoImg" src="../../../src/image/logo/logo_dc_hexagon_bg.png" alt="">
+            <div class="headerLogoText">DIEGO CASTELLARI</div>
+        </div>
+        <div>
+            <div class="headerTitle" onclick="javascript:location.href='../proyectos.html'">Proyectos</div>
+        </div>
+        <div class="headerNav">
+            <!-- <div class="headerContact"  onclick="javascript:location.href='../contacto.html'">Contacto</div> -->
+            <!-- <img class="headerLangImg" src="../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='./esp/contacto.html'"> -->
+        </div>
+    </header>
+    <main>
+        <section class="title">
+            <div class="text">Exploración de un dataset de imágenes de rutas</div>
+            <div class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></div>
+            <div class="client">For: <a href="https://corredoresvialessa.com.ar/corredores-viales-nacionales">Corredores Viales S.A.</a></div>
+            <div class="softwares">
+                <img src="../../../src/image/softwares/arcgispro.PNG" alt="">
+                <img src="../../../src/image/softwares/arcpy.PNG" alt="">
+                <img src="../../../src/image/softwares/python.PNG" alt="">
+                <img src="../../../src/image/softwares/pandas.PNG" alt="">
+                <img src="../../../src/image/softwares/matplotlib.PNG" alt="">
+            </div>
+        </section>
+        <section class="intro">
+            <div class="introImg" style="background-image: url('../../../src/image/projects/imageMerge/rn0008_a_1_0140.111.jpg');"></div>
+            <div class="introText"> 
+                <p>Se disponían de unas 2.4 millones de imágenes correspondientes a 3500km de rutas nacioanles, correspondientes a los tramos I al VI, y se erquería conocer la calidad de dicho set de datos, ya que sería empleados para aplicaciones y análisis futuros.</p> 
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapterImg" style="background-image: url('../../../src/image/projects/imageMerge/ImageFiles.PNG');"></div>
+            <div class="subtitle">Merging</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/imageMerge/01_ImageStructure.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Las 2.4 millones de imágenes estaban agrupadas en grupos de 2000, separadas por tramo, ruta, sentido y cámara; cada grupo con un archivo csv con metadatos.</p> 
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/imageMerge/03_FinalFileCSV.PNG');"></div>
+                <div class="explanation">
+                    <p>Se copiaron todas las imágenes a un única ubicación y se unificaron los archivos en uno solo.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapterImg"></div>
+            <div class="subtitle">Exploración</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/imageMerge/06_correction.PNG');"></div>
+                <div class="explanation">
+                    <p>Corrección de valores incorrectos, debido a errores en los datos o a valores en unidades distintas.</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/imageMerge/04_databytramostart.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Creación de datos a partir de la agrupación por tramos, rutas, sentidos y cámaras, para, por ejemplo, conocer la cantidad de imágenes por ruta.</p> 
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/imageMerge/05_dataCollection.PNG');"></div>
+                <div class="explanation">
+                    <p>Cración de datos a partir de los archivos de imágenes y de los datos de los csv, y del cruce de estos dos, para por ejemplo, deterctar faltantes.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapterImg" style="background-image: url('../../../src/image/projects/imageMerge/rn0008_a_1_0140.111.jpg');"></div>
+            <div class="subtitle">Reporte</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/imageMerge/09_charts.PNG');"></div>
+                <div class="explanation">
+                    <p>Se generaron gráficos que acompañen el informe, junto con fotos y tablas, para facilitar la comprensión de los datos y resultados. </p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/imageMerge/10_report.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Se escribiió un informe detallando el análisis realizado, los resultados encontrados, y las conclusiones a las que se llegó, proponiendo acciones a tomar. </p> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+</body>
+</html>

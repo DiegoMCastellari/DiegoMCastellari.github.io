@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../src/style/header.css">
+    <link rel="stylesheet" href="../src/style/client.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Diego Manuel CASTELLARI <br>
+            Ing. Agrimensor <br>
+            tel: 02355-15-640246 <br>
+            mail: agrimcastellari@gmail.com
+        </div>
+        <div class="title">AGRIMENSURA</div>
+        <div class="clientEnter">
+            <input type="text" id="client">
+            <button onclick="mostrarKey()" id="buttonEnter"> Mostrar </button>
+            <p id="errorClient"></p>
+            <select style="display: none;" class="dropdown" id="dropdownList" name="jobname" onchange="dropdownUpdate()">
+                <option value="volvo">Volvo</option>
+            </select>
+        </div>
+    </header>
+    <main class="jobContent">
+        <div class="jobResume">
+            <div class="partcela">
+                <!-- <div class="jobType">Tipo de Trámite</div> -->
+                <div class="jobPda">Pdo-Pda</div>
+                <div class="jobPda">Nomen</div>
+                <div class="jobPda">Dominio</div>
+                <div class="jobPda">Direccion</div>
+            </div>
+            <div class="cliente">
+                <div class="jobPda">Nombre</div>
+                <div class="jobPda">CIUT</div>
+                <div class="jobPda">Direccion</div>
+                <div class="jobPda">Contacto</div>
+            </div>
+        </div>
+        <div class="advanceResume">
+            <section class="jobAdvance">
+                <div class="advStep">
+                    <div class="advName">Paso</div>
+                    <div class="advState">Estado</div>
+                    <div class="advDate">Fecha</div>
+                </div>
+            </section>
+            <section class="jobBudget">
+                <div class="budgetTotal">
+                    <div class="totalBudget">$-%</div>
+                    <div class="totalDate">Fecha: </div>
+                </div>
+                <div class="detailBudget">
+                    <div>
+                        <div class="budgetResume">
+                            <div class="totalBudget">$</div>
+                            <div class="totalPorc">%</div>
+                        </div>
+                        <div class="budgetPay">
+                            <div class="payAmout">$</div>
+                            <div class="payDate">F</div>
+                            <div class="payPorc">%</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="expensesResume">
+                            <div class="totalExpenses">$</div>
+                        </div>
+                        <div class="expensesPay">
+                            <div class="payAmout">F</div>
+                            <div class="payDate">$</div>
+                            <div class="payPorc">F</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="proyFiles">
+                <div class="file">
+    
+                </div>
+                <div class="file">
+    
+                </div>
+                <div class="file">
+    
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../src/data/jobs.js"></script>
+    <script src="../src/javascript/enterClient.js"></script>
+    <script>
+        var jobDropList = document.querySelectorAll(".dropdown")[0];
+        var dropHTML = ""
+        for ( let j=0; j<jobsCode.length; j++ ){
+
+            dropHTML = dropHTML + '<option value="'+ jobsCode[j].view +'">'+jobsCode[j].id+'</option>'
+        }
+        jobDropList.innerHTML = '<select class="dropdown" name="jobname" onchange="dropdownUpdate()">' + dropHTML + '</select>'
+
+    </script>
+</body>
+</html>

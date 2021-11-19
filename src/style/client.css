@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+header {
+    background-color: #0079b5;
+}
+main {
+    width: 80%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/********************************* JOB RESUME ******************/
+main .jobResume {
+    background-color: lightskyblue;
+    width: 100%;
+    padding: 0% 10%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .jobResume .jobType {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #0079b5;
+}
+main .jobResume .partcela {
+    width: 50%;
+}
+main .jobResume .partcela .jobPda {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: grey;
+}
+main .jobResume .cliente {
+    width: 50%;
+}
+main .jobResume .cliente .jobPda {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: grey;
+}
+
+
+/********************************* ADVANCE RESUME */
+
+main .advanceResume {
+    width: 100%;
+    height: 65vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main .advanceResume .jobAdvance {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* main .jobAdvance .advStep {
+    width: 90%;
+    height: 45px;
+    background-color: lightgray;
+    border: solid 4px silver;
+    border-radius: 10px;
+}
+ */
+
+main .advanceResume .jobAdvance .advStep {
+    width: 90%;
+    height: 35px;
+    border:0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content:  space-around;
+}
+main .advanceResume .jobAdvance .advStep div {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: darkslategray;
+}
+main .advanceResume .jobAdvance .presc {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+main .advanceResume .jobAdvance .presc div{
+    font-size: 15px;
+    color: lightgray;
+}
+main .advanceResume .jobAdvance .finalizado {
+    width: 98%;
+    background-color: rgb(170, 206, 170);
+    color: green;
+}
+main .advanceResume .jobAdvance .finalizado div {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+main .advanceResume .jobAdvance .proceso {
+    justify-content: space-around;
+    background-color: lightskyblue;
+    color: #0079b5;
+    border: solid 4px #0079b5;
+}
+main .advanceResume .advanceResume .jobAdvance .proceso div {
+    color: #0079b5;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+main .advanceResume .jobAdvance .advStep .advName{
+    width: 40%;
+    text-align: right;
+}
+main .advanceResume .jobAdvance .advStep .advState{
+    width: 45%;
+    
+}
+main .advanceResume .jobAdvance .advStep .advDate{
+    width: 15%;
+}
+
+/********************************************************************/
+/*********************************** BUDGET *************************/
+
+main .advanceResume .jobBudget {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*********************************** TOTAL **********/
+main .advanceResume .jobBudget .budgetTotal {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main .advanceResume .jobBudget .budgetTotal .totalBudget {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #0079b5;
+    text-align: center;
+}
+main .advanceResume .jobBudget .budgetTotal .totalDate {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #0079b5;
+    text-align: center;
+}
+
+main .advanceResume .jobBudget .detailBudget{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+main .advanceResume .jobBudget .detailBudget div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main .advanceResume .jobBudget .detailBudget div .budgetResume, main .jobBudget .detailBudget div .expensesResume{
+    width: 100%;
+    height: 70px;
+    background-color: lightskyblue;
+    border: solid 4px #0079b5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+main .advanceResume .jobBudget .detailBudget div .budgetResume div, main .jobBudget .detailBudget div .expensesResume div {
+    width: 100%;
+    color: orangered;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+main .advanceResume .jobBudget .detailBudget div .budgetResume .totalPorc {
+    color: green;
+}
+main .advanceResume .jobBudget .detailBudget div .budgetPay, main .jobBudget .detailBudget div .expensesPay{
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    border:0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .advanceResume .jobBudget .detailBudget div .budgetPay div {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #0079b5;
+}
+main .advanceResume .jobBudget .detailBudget div .budgetPay .payAmout{
+    width: 40%;
+}
+main .advanceResume .jobBudget .detailBudget div .budgetPay .payDate{
+    width: 40%;
+}
+main .advanceResume .jobBudget .detailBudget div .budgetPay .payPorc{
+    width: 20%;
+}
+
+
+main .advanceResume .jobBudget .detailBudget div .expensesResume{
+    background-color: lightsalmon;
+    color: orangered;
+    border: solid 4px orangered;
+}
+main .advanceResume .jobBudget .detailBudget div .expensesResume .totalExpenses {
+    color: orangered;
+}
+main .advanceResume .jobBudget .detailBudget div .expensesPay div {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: orangered;
+}
+main .advanceResume .jobBudget .detailBudget div .expensesPay .payAmout{
+    width: 50%;
+}
+main .advanceResume .jobBudget .detailBudget div .expensesPay .payDate{
+    width: 50%;
+}
+
+
+/********************************************************************/
+/*********************************** FILES **************************/
+main .advanceResume .proyFiles {
+    padding: 10px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+main .advanceResume .proyFiles .file {
+    background-color: red;
+    width: 100%;
+    height: 40px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+main .advanceResume .proyFiles .PDF {
+    color: #AD0B00;
+    background-color: #EFEFEF;
+    border: solid 3px #AD0B00;
+}
+main .advanceResume .proyFiles .DWG {
+    color: #0F3B6C;
+    background-color: #EEE08C;
+    border: solid 3px #0F3B6C;
+}
+main .advanceResume .proyFiles .RAR {
+    color: #80368E;
+    background-color: #89C07B;
+    border: solid 3px #80368E;
+}

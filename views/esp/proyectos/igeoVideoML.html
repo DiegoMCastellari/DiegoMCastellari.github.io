@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../../src/style/general.css">
+    <link rel="stylesheet" href="../../../src/style/projectPage.css">
+</head>
+<body>
+
+    <header>
+        <div class="headerLogo" onclick="javascript:location.href='../../../index_esp.html'">
+            <img class="headerLogoImg" src="../../../src/image/logo/logo_dc_hexagon_bg.png" alt="">
+            <div class="headerLogoText">DIEGO CASTELLARI</div>
+        </div>
+        <div>
+            <div class="headerTitle" onclick="javascript:location.href='../proyectos.html'">Proyectos</div>
+        </div>
+        <div class="headerNav">
+            <!-- <div class="headerContact"  onclick="javascript:location.href='../contacto.html'">Contacto</div> -->
+            <!-- <img class="headerLangImg" src="../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='./esp/contacto.html'"> -->
+        </div>
+    </header>
+    <main>
+        <section class="title">
+            <div class="text">Detección de daños en pavimento a partir de un video de GoPro</div>
+            <div class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></div>
+            <div class="client">For: <a href="https://corredoresvialessa.com.ar/corredores-viales-nacionales">Corredores Viales S.A.</a></div>
+            <div class="softwares">
+                <img src="../../../src/image/softwares/python.PNG" alt="">
+                <img src="../../../src/image/softwares/pandas.PNG" alt="">
+                <img src="../../../src/image/softwares/pytorch.PNG" alt="">
+                <img src="../../../src/image/softwares/opencv.PNG" alt="">
+                <img src="../../../src/image/softwares/matplotlib.PNG" alt="">
+            </div>
+        </section>
+        <section class="intro">
+            <div class="introImg" style="background-image: url('../../../src/image/projects/igeoVideo/intro.PNG');"></div>
+            <div class="introText"> 
+                <p>En la búsqueda de una metodología rápida y económica de relevar daños en pavimentos, se decidión realizar una prueba por medio de la captura de un video de la ruta, para luego procesar dichas imágenes por medio de ténicas de machine learning, logrando identificar y ubicar los daños presentes en las rutas.</p> 
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapterImg" style="background-image: url('../../../src/image/projects/igeoVideo/goprocar2.PNG');"></div>
+            <div class="subtitle">Captura del Video</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/igeoVideo/goprocar.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Se montó una cámara GoPro Hero 9 en el frente de un vehículo, relevando 50km de ruta, ida y vuelta, a baja velocidad.</p> 
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/igeoVideo/goproextractos.PNG');"></div>
+                <div class="explanation">
+                    <p>Una vez bajado el video de la cámara, se utilizó la aplicación de GoPro para separar del mismo los metadatos de telemetría (<a href="https://goprotelemetryextractor.com/free/">https://goprotelemetryextractor.com/free/</a>).</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapterImg" style="background-image: url('../../../src/image/projects/igeoVideo/video-gopro-frame.PNG');"></div>
+            <div class="subtitle">Procesamiento de Video</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/igeoVideo/videoframes.PNG');"></div>
+                <div class="explanation">
+                    <p>Del video se extrajeron un cuadro por segundo, almacenando cada uno individualmente como imagen.</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/igeoVideo/imageposition.PNG');"></div>
+                <div class="explanation"> 
+                    <p>A partir de los datos de telemetría, se determinó la posición para cada imagen, por medio de la correlación del tiempo de video, generando una capa geográfica de las mismas.</p> 
+                </div>
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapterImg" style="background-image: url('../../../src/image/projects/igeoVideo/machine-learning-deep-learning.PNG');"></div>
+            <div class="subtitle">Machine Learning</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/igeoVideo/deep-learning-neural-network.png');"></div>
+                <div class="explanation">
+                    <p>Se procesaron las imágenes empleando un modelo de deep learning de detección de objetos, ganador de la competencia mundial RDDC (<a href="https://rdd2020.sekilab.global/">https://rdd2020.sekilab.global/</a>),considerado como estado del arte. </p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/igeoVideo/machine-learning-object-detection-bbox.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Como resultado se obtuvieron todas las imágenes con las bounding boxes sobre las mismas, con su etiqueta y probabilidad, y un archivo con cada una de las bbox, con sus datos y el nombre de la imagen a la que pertenece. </p> 
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/igeoVideo/imageposition.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Se realizó una agrupación de los daños para cada imagen, determiando la cantidad de cada tipo de daño y daños totales en cada imagen, los cual se agregaron a la capa geográfica de imágenes.</p> 
+                </div>
+            </div>            
+        </section>
+        <section class="chapter">
+            <div class="chapterImg" style="background-image: url('../../../src/image/projects/igeoVideo/quality-control.PNG');"></div>
+            <div class="subtitle">Control de calidad</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/igeoVideo/random-sample.PNG');"></div>
+                <div class="explanation">
+                    <p>Se separó una muestra aleatoria de las imágenes para realizar un control de calidad del resultado obtenido, empleando la norma ISO 2859. LAs mismas fueron controladas una a una, chequeando que las detecciones sean correctas y que no se hayan pasado daños sin detectar.</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/igeoVideo/f1-score-quality-control.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Con los datos generados a partir del control, se calculó el valor F1 para determinar la calidad de la misma.</p> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+</body>
+</html>

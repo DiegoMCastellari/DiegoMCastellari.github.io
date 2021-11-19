@@ -1,0 +1,83 @@
+main{
+    position: relative;
+    left: 10vw;
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+
+main .sendMail {
+    background-color: lightseagreen;
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .sendMail form label {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+main .sendMail form input, main .sendMail form textarea {
+    font-size: 20px;
+    width: 30vw;
+    padding: 1px;
+    border: solid 2px white;
+    border-radius: 7px;
+}
+main .sendMail form button {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 25px;
+    border: solid 4px white;
+    border-radius: 7px;
+}
+
+
+main .shorcuts {
+    width: 50%;
+    height: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+main .shorcuts img {
+    height: 50px;
+    padding-left: 5px;
+}
+main .shorcuts .photoSelf {
+    position: absolute;
+    height: 550px;
+    right: -12%;
+    bottom: 0%;
+    filter: grayscale(1000%) saturate(0.5) contrast(1.2);
+}
+main .shorcuts .iconIG, main .shorcuts .iconLI {
+    filter: grayscale(100%) invert(1);
+}
+main .shorcuts .iconIG:hover, main .shorcuts .iconLI:hover {
+    filter: grayscale(0%) invert(0);
+}
+main .shorcuts .iconGH {
+    filter: invert(77%) sepia(0%) saturate(1641%) hue-rotate(184deg) brightness(85%) contrast(93%);
+    /* opacity: .4; */
+}
+main .shorcuts .iconGH:hover {
+    filter: invert(0%) sepia(0%) saturate(5606%) hue-rotate(25deg) brightness(96%) contrast(103%);
+    /* opacity: .4; */
+}

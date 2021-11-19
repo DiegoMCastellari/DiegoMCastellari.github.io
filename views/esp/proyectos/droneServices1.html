@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../../src/style/general.css">
+    <link rel="stylesheet" href="../../../src/style/projectPage.css">
+</head>
+<body>
+
+    <header>
+        <div class="headerLogo" onclick="javascript:location.href='../../../index_esp.html'">
+            <img class="headerLogoImg" src="../../../src/image/logo/logo_dc_hexagon_bg.png" alt="">
+            <div class="headerLogoText">DIEGO CASTELLARI</div>
+        </div>
+        
+        <div>
+            <div class="headerTitle"  onclick="javascript:location.href='../proyectos.html'">Proyectos</div>
+        </div>
+        <div class="headerNav">
+            <!-- <div class="headerContact"  onclick="javascript:location.href='../contacto.html'">Contacto</div> -->
+            <!-- <img class="headerLangImg" src="../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='./esp/contacto.html'"> -->
+        </div>
+    </header>
+    <main>
+        <section class="title">
+            <div class="text">Procesamiento de una nube de puntos LiDAR.</div>
+            <div class="contractor"></div>
+            <div class="client">Para: <a href="https://www.droneservices.com.ar/">Drone Services</a></div>
+            <div class="softwares">
+                <img src="../../../src/image/softwares/lidar360.png" alt="">
+                <img src="../../../src/image/softwares/lastool.png" alt="">
+                <img src="../../../src/image/softwares/civil3d.png" alt="">
+                <img src="../../../src/image/softwares/arcmap.PNG" alt="">
+            </div>
+        </section>
+        <section class="intro">
+            <div class="introImg" style="background-image: url('../../../src/image/projects/droneservices/test/lidar-point-cloud-rgb.png');"></div>
+            <div class="introText"> 
+                <p>Con el objetivo de proveer información espacial sobre un área donde se realizaría una obra de ingeniería, se realizó el procesamiento de una nube de puntos, capturada a partir de un un dispositivo LiDAR montado sobre un Drone. El procesamiento comenzó luego del relevamiento, bajada y calibración de los datos; y contempla la limpieza de la nube, la clasificación de la misma, y finalmente la generación de productos derivados. </p> 
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapterImg" style="background-image: url('../../../src/image/projects/droneservices/test/point-cloud-cleanning-noise-outliers.PNG');"></div>
+            <div class="subtitle">Limpieza de la nube</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/droneservices/test/point-cloud-outliers.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Se eliminaron los puntos considerados outliers, aquellos puntos aislados, que por su distancia a la nube no se consideran parte de la misma. </p> 
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/droneservices/test/point-cloud-noise.PNG');"></div>
+                <div class="explanation">
+                    <p>Se realizó un filtro y eliminación de todos los puntos considerados ruido, cualquier punto que no se ajuste al plano generado por los vecinos próximos, dada una determinada tolerancia, logrando una nube más suave. </p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapterImg" style="background-image: url('../../../src/image/projects/droneservices/test/drone-lidar-point-cloud-classified-profile.PNG');"></div>
+            <div class="subtitle">Procesamiento de la nube</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/droneservices/test/point-cloud-classified-ground-points.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Se clasificaron los puntos de suelo, primero por medio de una herramienta automática, logrando una primera estimación del terreno, y luego realizando una clasificación por selección. </p> 
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/droneservices/test/drone-lidar-point-cloud-classified-profile.PNG');"></div>
+                <div class="explanation">
+                    <p>Se clasificaron las edificaciones y vegetación por medio de herramientas de Machine Learning, generando una muestra de puntos sobre los cuales entrenar el modelo a correr. </p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/droneservices/test/drone-lidar-point-cloud-classified.PNG');"></div>
+                <div class="explanation">
+                    <p>Finalemente, se realizaron correcciones de las clases a empleando los perfiles, y se clasificaron el resto de los puntos a partir de su altura respecto al suelo.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapterImg" style="background-image: url('../../../src/image/projects/droneservices/test/lidar-point-cloud-dem.PNG');"></div>
+            <div class="subtitle">Producto final</div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/droneservices/test/lidar-point-cloud-dem-contour.PNG');"></div>
+                <div class="explanation"> 
+                    <p>Se generaron modelos digitales de terreno y elevación, y datos vectoriales como curvas de nivel.</p> 
+                </div>
+            </div>
+            <div class="part">
+                <div class="picture" style="background-image: url('../../../src/image/projects/droneservices/test/point-cloud-civil-3d.PNG');"></div>
+                <div class="explanation"> 
+                    <p>A partir de los datos generados, se importaron a otros softwares de GIS y CAD, como Civil3D, para facilitar las tareas de diseño.</p> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+</body>
+</html>

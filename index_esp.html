@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./src/style/home.css">
+    <style>
+        .imgBackground {
+            position: absolute;
+            transition: opacity 1s ease-in;
+        }
+
+        .imgBackground + .imgBackground { opacity: 0; }
+    </style>
+</head>
+<body>
+    <!-- <div class="backgorundFade">
+        <img src="./src/image/logo/logo.png" alt="gps" class="imgFrontFade">
+    </div> -->
+
+    <div class="changeLang">
+        <img class="headerLangImg" src="./src/image/icon/flagENG.png" alt="" onclick="javascript:location.href='./index.html'">
+    </div>
+    <section class="startWindow">
+        <div class="logo">
+            <img class="logoimg" src="./src/image/logo/logo_dc_hexagon_bg.png" alt="">
+            <div class="logotext">DIEGO CASTELLARI</div>
+        </div>
+
+        <menu class="navmenu">
+            <button class="navbutton" onclick="javascript:location.href='./views/esp/servicios.html'">QUÉ HAGO</button>
+            <button class="navbutton" onclick="javascript:location.href='./views/esp/proyectos.html'"> QUÉ HE HECHO</button>
+            <button class="navbuttonInactive">BIBLOS</button>
+            <button class="navbuttonInactive">SLIDES</button> <!-- onclick="javascript:location.href='views/slides.html'" -->
+            <!-- <button class="navbuttonInactive">CONTACTOS</button> onclick="javascript:location.href='./views/esp/contacto.html'" -->
+        </menu>
+    
+        <div class="phrase">
+            <div class="phraseTitle">BIENVENIDO!!</div><br><br><br>
+            <div class="phraseText">Obtenga información a través del poder de los datos geográficos.</div>
+        </div>
+
+        <div class="background">
+            <img src="./src/image/logo_diego_castellari_hexagon_3.png" alt="gps" class="imgBackground">
+            <!-- <img src="./src/image/Captura6.PNG" alt="gps" class="imgBackground">
+            <img src="./src/image/Captura2.PNG" alt="gps" class="imgBackground"> -->
+            <img src="./src/image/Captura.PNG" alt="gps" class="imgBackground">
+            <img src="./src/image/Captura5.PNG" alt="gps" class="imgBackground">
+        </div>
+        <div class="fadeMask"></div>
+    </section>
+    <div class="shorcuts">
+        <img class="photoSelf" src="./src/image/contact/Foto111.png" alt="">
+        <a href=""><img class="iconIG" src="./src/image/icon/instagram.png" alt=""></a>
+        <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="./src/image/icon/github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="./src/image/icon/linkedin.png" alt=""></a>
+    </div>
+    
+    <script>
+        var current = 0,
+        slides = document.querySelectorAll(".imgBackground");
+
+        setInterval(function() {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = 0;
+            }
+            current = (current != slides.length - 1) ? current + 1 : 0;
+            slides[current].style.opacity = 1;
+            }, 5000);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1536 @@
+999
+Agencia de Recaudación de la Provincia de Buenos Aires
+999
+DATE : Mon Jul 30 13:46:10 ART 2018
+  0
+SECTION
+  2
+HEADER
+  9
+$ACADVER
+  1
+AC1009
+  9
+$CECOLOR
+ 62
+   256
+  9
+$CELTYPE
+  6
+DUPLAN
+  9
+$CLAYER
+  8
+0
+  9
+$ELEVATION
+ 40
+0.000
+  9
+$EXTMAX
+ 10
+5325934.560000
+ 20
+6152078.660000
+  9
+$EXTMIN
+ 10
+5325253.500000
+ 20
+6151621.210000
+  9
+$INSBASE
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$LIMCHECK
+ 70
+     1
+  9
+$LIMMAX
+ 10
+5325934.560000
+ 20
+6152078.660000
+  9
+$LIMMIN
+ 10
+5325253.500000
+ 20
+6151621.210000
+  9
+$LUNITS
+ 70
+     2
+  9
+$LUPREC
+ 70
+     2
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+STYLE
+ 70
+     1
+  0
+STYLE
+  2
+STANDARD
+ 70
+     0
+ 40
+0.000
+ 41
+1.000
+ 50
+0.000
+ 71
+     0
+ 42
+1.000
+  3
+xxx.txt
+  4
+yyy.txt
+  0
+ENDTAB
+  0
+TABLE
+  2
+LTYPE
+ 70
+     1
+  0
+LTYPE
+  2
+CONTINUE
+ 70
+     0
+  3
+
+ 72
+    65
+ 73
+     0
+ 40
+0.000
+  0
+ENDTAB
+  0
+TABLE
+  2
+LAYER
+ 70
+     2
+  0
+LAYER
+  2
+Macizo
+ 70
+     0
+ 62
+   131
+  6
+CONTINUE
+  0
+LAYER
+  2
+MacizosLinderos
+ 70
+     0
+ 62
+   131
+  6
+CONTINUE
+  0
+LAYER
+  2
+Parcelas
+ 70
+     0
+ 62
+   131
+  6
+CONTINUE
+  0
+LAYER
+  2
+ParcelasReunion
+ 70
+     0
+ 62
+   131
+  6
+CONTINUE
+  0
+LAYER
+  2
+Cotas
+ 70
+     0
+ 62
+   131
+  6
+CONTINUE
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+POLYLINE
+  8
+Macizo
+ 62
+    95
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 70
+     9
+  0
+VERTEX
+  8
+Macizo
+ 10
+5325495.700
+ 20
+6151835.310
+ 70
+    32
+  0
+VERTEX
+  8
+Macizo
+ 10
+5325491.560
+ 20
+6151786.480
+ 70
+    32
+  0
+VERTEX
+  8
+Macizo
+ 10
+5325536.400
+ 20
+6151782.660
+ 70
+    32
+  0
+VERTEX
+  8
+Macizo
+ 10
+5325581.240
+ 20
+6151778.860
+ 70
+    32
+  0
+VERTEX
+  8
+Macizo
+ 10
+5325600.400
+ 20
+6151777.230
+ 70
+    32
+  0
+VERTEX
+  8
+Macizo
+ 10
+5325645.240
+ 20
+6151773.430
+ 70
+    32
+  0
+VERTEX
+  8
+Macizo
+ 10
+5325690.080
+ 20
+6151769.620
+ 70
+    32
+  0
+VERTEX
+  8
+Macizo
+ 10
+5325694.210
+ 20
+6151818.460
+ 70
+    32
+  0
+VERTEX
+  8
+Macizo
+ 10
+5325495.700
+ 20
+6151835.310
+ 70
+    32
+  0
+SEQEND
+  0
+TEXT
+  8
+Macizo
+ 10
+5325592.887159
+ 20
+6151802.465371
+ 62
+95
+ 40
+3.0
+ 50
+1
+  1
+Pdo- 44 Cir- 1 Sec- B Qt- 52
+ 72
+1
+ 73
+1
+ 11
+5325592.887159
+ 21
+6151802.465371
+  0
+POLYLINE
+  8
+MacizosLinderos
+ 62
+   115
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 70
+     9
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325271.440
+ 20
+6151855.310
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325470.420
+ 20
+6151838.610
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325453.490
+ 20
+6151640.350
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325253.500
+ 20
+6151657.120
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325271.440
+ 20
+6151855.310
+ 70
+    32
+  0
+SEQEND
+  0
+TEXT
+  8
+MacizosLinderos
+ 10
+5325362.203927
+ 20
+6151747.764074
+ 62
+115
+ 40
+3.0
+ 50
+1
+  1
+Pdo- 44 Cir- 1 Sec- B Qt- 51
+ 72
+1
+ 73
+1
+ 11
+5325362.203927
+ 21
+6151747.764074
+  0
+POLYLINE
+  8
+MacizosLinderos
+ 62
+   115
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 70
+     9
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325390.340
+ 20
+6152069.650
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325489.910
+ 20
+6152060.650
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325483.340
+ 20
+6151980.890
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325480.020
+ 20
+6151940.520
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325476.700
+ 20
+6151900.140
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325473.470
+ 20
+6151860.860
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325273.840
+ 20
+6151877.670
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325277.240
+ 20
+6151918.180
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325280.630
+ 20
+6151958.550
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325284.020
+ 20
+6151998.920
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325290.720
+ 20
+6152078.660
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325390.340
+ 20
+6152069.650
+ 70
+    32
+  0
+SEQEND
+  0
+TEXT
+  8
+MacizosLinderos
+ 10
+5325381.877948
+ 20
+6151969.440033
+ 62
+115
+ 40
+3.0
+ 50
+1
+  1
+Pdo- 44 Cir- 1 Sec- B Qt- 44
+ 72
+1
+ 73
+1
+ 11
+5325381.877948
+ 21
+6151969.440033
+  0
+POLYLINE
+  8
+MacizosLinderos
+ 62
+   115
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 70
+     9
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325487.360
+ 20
+6151736.930
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325483.180
+ 20
+6151687.630
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325479.210
+ 20
+6151640.800
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325481.950
+ 20
+6151637.560
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325523.800
+ 20
+6151634.010
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325565.650
+ 20
+6151630.460
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325568.890
+ 20
+6151633.190
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325572.860
+ 20
+6151680.020
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325577.040
+ 20
+6151729.320
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325581.240
+ 20
+6151778.860
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325536.400
+ 20
+6151782.660
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325491.560
+ 20
+6151786.470
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325491.560
+ 20
+6151786.480
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325487.360
+ 20
+6151736.930
+ 70
+    32
+  0
+SEQEND
+  0
+TEXT
+  8
+MacizosLinderos
+ 10
+5325530.102301
+ 20
+6151708.385625
+ 62
+115
+ 40
+3.0
+ 50
+1
+  1
+Pdo- 44 Cir- 1 Sec- B Qt- 52 Mz- 52A
+ 72
+1
+ 73
+1
+ 11
+5325530.102301
+ 21
+6151708.385625
+  0
+POLYLINE
+  8
+MacizosLinderos
+ 62
+   115
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 70
+     9
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325516.910
+ 20
+6152056.280
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325713.620
+ 20
+6152041.300
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325696.210
+ 20
+6151843.810
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325499.630
+ 20
+6151858.910
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325516.910
+ 20
+6152056.280
+ 70
+    32
+  0
+SEQEND
+  0
+TEXT
+  8
+MacizosLinderos
+ 10
+5325606.604086
+ 20
+6151950.084108
+ 62
+115
+ 40
+3.0
+ 50
+1
+  1
+Pdo- 44 Cir- 1 Sec- B Qt- 45
+ 72
+1
+ 73
+1
+ 11
+5325606.604086
+ 21
+6151950.084108
+  0
+POLYLINE
+  8
+MacizosLinderos
+ 62
+   115
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 70
+     9
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325645.240
+ 20
+6151773.430
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325600.400
+ 20
+6151777.230
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325596.210
+ 20
+6151727.680
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325592.040
+ 20
+6151678.390
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325588.070
+ 20
+6151631.550
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325590.810
+ 20
+6151628.310
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325632.660
+ 20
+6151624.760
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325674.510
+ 20
+6151621.210
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325677.750
+ 20
+6151623.940
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325681.710
+ 20
+6151670.770
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325685.890
+ 20
+6151720.070
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325690.080
+ 20
+6151769.620
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325645.240
+ 20
+6151773.430
+ 70
+    32
+  0
+SEQEND
+  0
+TEXT
+  8
+MacizosLinderos
+ 10
+5325638.954492
+ 20
+6151699.143632
+ 62
+115
+ 40
+3.0
+ 50
+1
+  1
+Pdo- 44 Cir- 1 Sec- B Qt- 52 Mz- 52B
+ 72
+1
+ 73
+1
+ 11
+5325638.954492
+ 21
+6151699.143632
+  0
+POLYLINE
+  8
+MacizosLinderos
+ 62
+   115
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 70
+     9
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325719.730
+ 20
+6151815.090
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325754.740
+ 20
+6151812.360
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325808.750
+ 20
+6151808.150
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325804.700
+ 20
+6151764.110
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325803.360
+ 20
+6151749.570
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325802.030
+ 20
+6151735.020
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325800.920
+ 20
+6151723.030
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325797.660
+ 20
+6151720.270
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325768.110
+ 20
+6151722.570
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325756.140
+ 20
+6151723.500
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325735.890
+ 20
+6151725.070
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325711.720
+ 20
+6151726.940
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325715.690
+ 20
+6151770.630
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325719.730
+ 20
+6151815.090
+ 70
+    32
+  0
+SEQEND
+  0
+TEXT
+  8
+MacizosLinderos
+ 10
+5325760.187700
+ 20
+6151767.591044
+ 62
+115
+ 40
+3.0
+ 50
+1
+  1
+Pdo- 44 Cir- 1 Sec- B Qt- 53 Mz- 53A
+ 72
+1
+ 73
+1
+ 11
+5325760.187700
+ 21
+6151767.591044
+  0
+POLYLINE
+  8
+MacizosLinderos
+ 62
+   115
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 70
+     9
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325869.130
+ 20
+6151998.790
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325860.150
+ 20
+6151999.490
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325845.970
+ 20
+6151833.500
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325721.700
+ 20
+6151843.930
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325738.830
+ 20
+6152038.130
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325862.610
+ 20
+6152028.690
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325908.420
+ 20
+6152025.200
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325934.560
+ 20
+6152023.200
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325932.380
+ 20
+6151993.800
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325906.100
+ 20
+6151995.870
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325899.210
+ 20
+6151996.420
+ 70
+    32
+  0
+VERTEX
+  8
+MacizosLinderos
+ 10
+5325869.130
+ 20
+6151998.790
+ 70
+    32
+  0
+SEQEND
+  0
+TEXT
+  8
+MacizosLinderos
+ 10
+5325800.777982
+ 20
+6151942.037384
+ 62
+115
+ 40
+3.0
+ 50
+1
+  1
+Pdo- 44 Cir- 1 Sec- B Qt- 46
+ 72
+1
+ 73
+1
+ 11
+5325800.777982
+ 21
+6151942.037384
+  0
+POLYLINE
+  8
+Parcelas
+ 62
+   100
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 70
+     9
+  0
+VERTEX
+  8
+Parcelas
+ 10
+5325690.080
+ 20
+6151769.620
+ 70
+    32
+  0
+VERTEX
+  8
+Parcelas
+ 10
+5325694.210
+ 20
+6151818.450
+ 70
+    32
+  0
+VERTEX
+  8
+Parcelas
+ 10
+5325495.700
+ 20
+6151835.310
+ 70
+    32
+  0
+VERTEX
+  8
+Parcelas
+ 10
+5325491.560
+ 20
+6151786.470
+ 70
+    32
+  0
+VERTEX
+  8
+Parcelas
+ 10
+5325536.400
+ 20
+6151782.660
+ 70
+    32
+  0
+VERTEX
+  8
+Parcelas
+ 10
+5325581.240
+ 20
+6151778.860
+ 70
+    32
+  0
+VERTEX
+  8
+Parcelas
+ 10
+5325600.400
+ 20
+6151777.230
+ 70
+    32
+  0
+VERTEX
+  8
+Parcelas
+ 10
+5325645.240
+ 20
+6151773.430
+ 70
+    32
+  0
+VERTEX
+  8
+Parcelas
+ 10
+5325690.080
+ 20
+6151769.620
+ 70
+    32
+  0
+SEQEND
+  0
+TEXT
+  8
+Parcelas
+ 10
+5325592.882025
+ 20
+6151802.462777
+ 62
+100
+ 40
+2.0
+ 50
+1
+  1
+1
+ 72
+1
+ 73
+1
+ 11
+5325592.882025
+ 21
+6151802.462777
+  0
+TEXT
+  8
+Cotas
+ 10
+5325590.904574
+ 20
+6151779.041417
+ 62
+90
+ 40
+0.5
+ 50
+-5
+  1
+200.00
+ 72
+1
+ 73
+1
+ 11
+5325590.904574
+ 21
+6151779.041417
+  0
+TEXT
+  8
+Cotas
+ 10
+5325691.148558
+ 20
+6151794.119278
+ 62
+90
+ 40
+0.5
+ 50
+85
+  1
+49.00
+ 72
+1
+ 73
+1
+ 11
+5325691.148558
+ 21
+6151794.119278
+  0
+ENDSEC
+  0
+ENDSEC
+  0
+EOF

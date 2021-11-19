@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "mermeid";
+    src: url("../font/Mermaid/Mermaid1001.ttf");
+}
+@font-face {
+    font-family: "heiden";
+    src: url("../font/Heiden/HEIDEN\ FREE.ttf");
+}
+@font-face {
+    font-family: "halant";
+    src: url("../font/Halant/Halant-Bold.ttf");
+}
+@font-face {
+    font-family: "johnhancock";
+    src: url("../font/JohnHancockCP/JohnHancockCP.otf");
+}
+@font-face {
+    font-family: "bodoni";
+    src: url("../font/Bodoni/BodoniFLF-Bold.ttf");
+}
+@font-face {
+    font-family: "Baskerville";
+    src: url("../font/Baskerville/LibreBaskerville-Bold.ttf");
+}
+@font-face {
+    font-family: "within";
+    src: url("../font/Within/Whitin-CondensedBlack.otf");
+}
+@font-face {
+    font-family: "ChantelliAntiqua";
+    src: url("../font/ChantelliAntiqua/Chantelli_Antiqua.ttf");
+}
+@font-face {
+    font-family: "ChantelliAntiqua";
+    src: url("../font/Chantelli_Antiqua.ttf");
+}
+@font-face {
+    font-family: "Constantine";
+    src: url("../font/Constantine/Constantine.ttf");
+}
+@font-face {
+    font-family: "forum";
+    src: url("../font/forum/Forum-Regular.ttf");
+}
+@font-face {
+    font-family: "norse";
+    src: url("../font/Norse/Norse-Bold.otf");
+}
+
+@font-face {
+    font-family: "Arimo";
+    src: url("../font/Arimo/Arimo-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+    font-family: "ROBOTO";
+    src: url("../font/Robot/Roboto-Regular.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*************************************** HEADER **************************/
+
+header{
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    border-bottom: solid 1px darkgrey;
+    box-shadow: 3px 1px 10px 0.5px #ccc;
+}
+
+header .headerLogo {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 10%;
+    padding: 2%;
+}
+header .headerLogo .headerLogoImg {
+    height: 50px;
+    /* filter:  brightness(0); */
+}
+header .headerLogo .headerLogoText {
+    font-family: forum; /* norse; */
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+header .headerTitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+header .headerNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+    height: 10%;
+    padding: 2% 1%;
+}
+header .headerNav .headerContact {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-right: 15px;
+}
+header .headerNav .headerLangImg{
+    height: 50px;
+}

@@ -1,0 +1,370 @@
+@font-face {
+    font-family: "mermeid";
+    src: url("../font/Mermaid/Mermaid1001.ttf");
+}
+@font-face {
+    font-family: "heiden";
+    src: url("../font/Heiden/HEIDEN\ FREE.ttf");
+}
+@font-face {
+    font-family: "halant";
+    src: url("../font/Halant/Halant-Bold.ttf");
+}
+@font-face {
+    font-family: "johnhancock";
+    src: url("../font/JohnHancockCP/JohnHancockCP.otf");
+}
+@font-face {
+    font-family: "bodoni";
+    src: url("../font/Bodoni/BodoniFLF-Bold.ttf");
+}
+@font-face {
+    font-family: "Baskerville";
+    src: url("../font/Baskerville/LibreBaskerville-Bold.ttf");
+}
+@font-face {
+    font-family: "within";
+    src: url("../font/Within/Whitin-CondensedBlack.otf");
+}
+@font-face {
+    font-family: "ChantelliAntiqua";
+    src: url("../font/ChantelliAntiqua/Chantelli_Antiqua.ttf");
+}
+@font-face {
+    font-family: "Constantine";
+    src: url("../font/Constantine/Constantine.ttf");
+}
+@font-face {
+    font-family: "forum";
+    src: url("../font/forum/Forum-Regular.ttf");
+}
+@font-face {
+    font-family: "norse";
+    src: url("../font/Norse/Norse-Bold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+/* body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+} */
+
+/******************************** PHRASE */
+.startWindow .phrase {
+    position: absolute;
+    /* top: 25%;*/
+    left: 7%; 
+    width: 55%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.startWindow .phrase .phraseTitle{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    z-index: 5;
+}
+.startWindow .phrase .phraseText{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #04F9F5; /* #00eaff; /*#00bfff; /* #0095c7; /* #00ffff; */
+    z-index: 5;
+}
+
+/******************************** IMAGES */
+.startWindow{
+    width: 100%;
+    height: 100vh;
+}
+
+.startWindow .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.startWindow .background .imgBackground{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    filter:  contrast(130%);
+}
+.startWindow .backgorundFade{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeOut ease 5s;
+}
+.startWindow .backgorundFade .imgFrontFade {
+    width: 500px;
+    height: 500px;
+    z-index: 3;
+    animation: fadeOut ease 5s;
+}
+@keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+.startWindow .fadeMask {
+    background: linear-gradient(0.25turn, black, rgba(235, 248, 225, 0), rgba(235, 248, 225, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+
+/***************************** CHANGE LANGUAGE */
+.changeLang {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    margin: 5px;
+}
+.changeLang .headerLangImg{
+    background-color: white;
+    border-radius: 50%;
+    height: 6vh;
+    z-index: 20;
+}
+
+/***************************** NAVMENU */
+.startWindow .navmenu{
+    position: absolute;
+    width: 100%;
+    right: 30px;
+    height: 18%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.startWindow .navmenu .navbutton{
+    background-color: transparent;
+    border: transparent;
+    margin: 25px;
+    z-index: 10;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.startWindow .navmenu .navbutton:hover{
+    color: white;
+}
+.startWindow .navmenu .navbuttonInactive{
+    background-color: transparent;
+    border: transparent;
+    margin: 25px;
+    z-index: 10;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+
+/********************************** LOGO **********************************/
+.startWindow .logo {
+    position: absolute;
+    height: 18%;
+    width: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+.startWindow .logo .logotext {
+    position: absolute;
+    text-align: center;
+    font-family: forum; /* norse  ChantelliAntiqua forum johnhancock halant heiden within  mermeid   */
+    font-size: 35px;
+    font-weight: bold;
+    color: #FFFFFF; /* #0079b5; */
+    z-index: 4;
+}
+.startWindow .logo .logoimg {
+    position: relative;
+    top: 0;
+    height: 130px;
+    /* width: 130px; */
+    /* filter: invert(1) sepia(0%) saturate(0%) hue-rotate(330deg) brightness(1) contrast(84%); */
+    z-index: 4;
+}
+
+
+/*///////////////////////////////////// CONTACT  **********************************/
+.shorcuts {
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    top: 65%;
+    left: 0;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: nowrap;
+    z-index: 20;
+}
+.shorcuts img {
+    height: 50px;
+    padding-left: 5px;
+}
+.shorcuts .photoSelf {
+    position: absolute;
+    height: 300px;
+    bottom: 0%;
+    filter: grayscale(1000%) saturate(0.5) contrast(1.2);
+    z-index: 19;
+}
+.shorcuts a {
+    z-index: 20;
+}
+.shorcuts .iconIG, main .shorcuts .iconLI {
+    filter: grayscale(0%) invert(0);
+}
+.shorcuts .iconIG:hover, main .shorcuts .iconLI:hover {
+    filter: grayscale(100%) invert(1);
+}
+.shorcuts .iconGH {
+    filter: invert(0%) sepia(0%) saturate(5606%) hue-rotate(25deg) brightness(96%) contrast(103%);
+    /* opacity: .4; */
+}
+.shorcuts .iconGH:hover {
+    filter: invert(77%) sepia(0%) saturate(1641%) hue-rotate(184deg) brightness(85%) contrast(93%);
+    /* opacity: .4; */
+}
+.shorcuts .iconLI {
+    filter: none;
+    /* opacity: .4; */
+}
+.shorcuts .iconLI:hover {
+    filter: grayscale(100%) invert(1);
+    /* opacity: .4; */
+}
+/*///////////////////////////////////// WHO **********************************/
+
+
+
+
+
+
+
+/* 
+.whoDescription{
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.whoDescription .whoTitle {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    color: white;
+}
+.whoDescription .whoText {
+    padding: 0 15%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #808080;
+    text-align: center;
+}
+ */
+
+/*///////////////////////////////////// WHAT **********************************/
+/* 
+.whatDescription {
+    background-color: white;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.whatDescription .whatTitle {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+}
+.whatDescription .whatText {
+    padding: 0 15%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #808080;
+    text-align: center;
+}
+
+.what {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.what .whatImg {
+    background-color: darkgoldenrod;
+    width: 40%;
+    height: 80vh;
+}
+.what .whatText {
+    width: 56%;
+    height: 76vh;
+    padding: 2vh 2%;
+}
+.what .whatText .doTitle {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+}
+.what .whatText .doPara {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #808080;
+} */

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../src/style/general.css">
+    <link rel="stylesheet" href="../src/style/slides.css">
+    <link rel="stylesheet" href="../src/style/carousel.css">
+    <script src="../src/data/slidesData.js" ></script>
+</head>
+<body>
+
+    <header>
+        <div class="headerLogo" onclick="javascript:location.href='../index.html'">
+            <img class="headerLogoImg" src="../src/image/logo/logo.png" alt="">
+            <div class="headerLogoText">ADRIFT</div>
+        </div>
+        
+        <div>
+            <div class="headerTitle" onclick="javascript:location.href='slides.html'">Slides</div>
+        </div>
+        <div class="headerNav">
+            <div class="headerContact"  onclick="javascript:location.href='contact.html'">Contact</div>
+            <!-- <img class="headerLangImg" src="../src/image/icon/flagESP.png" alt=""> -->
+        </div>
+    </header>
+    <main class="content">
+        <menu class="category">
+            <button class="categoryButton" onclick="filterSlidesByCategories('.Geoscience', 'slideGeoscience')">
+                <div class="categoryImg categoryScience Geoscience">
+                    <img class="categoryScienceImg" src="../src/image/icon/world.png" alt="">
+                </div>
+                <div class="categoryText">Geoscience</div>
+            </button>
+            <button class="categoryButton" onclick="filterSlidesByCategories('.Datascience', 'slideDatascience')"> 
+                <div class="categoryImg categoryScience Datascience">
+                    <img class="categoryScienceImg" src="../src/image/icon/data2.png" alt="">
+                </div>
+                <div class="categoryText">Datascience</div>
+            </button>
+            <button class="categoryButton" onclick="filterSlidesByCategories('.Webscience', 'slideWebscience')"> 
+                <div class="categoryImg categoryScience Webscience">
+                    <img class="categoryScienceImg" src="../src/image/icon/web.png" alt="">
+                </div>
+                <div class="categoryText">Webscience</div>
+            </button>
+            <button class="categoryButton" onclick="filterSlidesByCategories('.Mindscience', 'slideMindscience')"> 
+                <div class="categoryImg categoryScience Mindscience">
+                    <img class="categoryScienceImg" src="../src/image/icon/mindset.png" alt="">
+                </div>
+                <div class="categoryText">Mindscience</div>
+            </button>
+            <button class="categoryButton" onclick="filterSlidesByCategories('.Tools', 'slideTools')"> 
+                <div class="categoryImg categoryTools Tools">
+                    <img class="categoryToolsImg" src="../src/image/icon/tools.png" alt="">
+                </div>
+                <div class="categoryText">Tools</div>
+            </button>
+            <button class="categoryButton" onclick="filterSlidesByCategories('.GeoHowTo', 'slideGeoHowTo')"> 
+                <div class="categoryImg categoryHowTo GeoHowTo">
+                    <img class="categoryHowToImg" src="../src/image/icon/geohowto.png" alt="">
+                </div>
+                <div class="categoryText">GeoHowTo</div>
+            </button>
+            <button class="categoryButton" onclick="filterSlidesByCategories('.DataHowTo', 'slideDataHowTo')"> 
+                <div class="categoryImg categoryHowTo DataHowTo">
+                    <img class="categoryHowToImg" src="../src/image/icon/datahowto.png" alt="">
+                </div>
+                <div class="categoryText">DataHowTo</div>
+            </button>
+            <button class="categoryButton" onclick="filterSlidesByCategories('.WebHowTo', 'slideWebHowTo')"> 
+                <div class="categoryImg categoryHowTo WebHowTo">
+                    <img class="categoryHowToImg" src="../src/image/icon/webhowto.png" alt="">
+                </div>
+                <div class="categoryText">WebHowTo</div>
+            </button>
+            <button class="categoryButton" onclick="filterSlidesByCategories('.ESRIHowTo', 'slideESRIHowTo')"> 
+                <div class="categoryImg categoryHowTo ESRIHowTo">
+                    <img class="categoryHowToImg" src="../src/image/icon/esrihowto.png" alt="">
+                </div>
+                <div class="categoryText">ESRIHowTo</div>
+            </button>
+            <button class="categoryButton" onclick="filterSlidesByCategories('.Examples', 'slideExamples')"> 
+                <div class="categoryImg categoryExample Examples">
+                    <img class="categoryExamplesImg" src="../src/image/icon/examples.png" alt="">
+                </div>
+                <div class="categoryText">Examples</div>
+            </button>
+            <!-- <button class="categoryButton" onclick="filterSlides('.Books', 'slideBooks')"> 
+                <div class="categoryImg categoryBook Books">
+                    <img class="categoryBooksImg" src="../src/image/icon/books.png" alt="">
+                </div>
+                <div class="categoryText">Books</div>
+            </button> -->
+        </menu>
+
+        <div class="slidesContent">
+            <aside class="subCategory">
+                <button class="subcategoryButton">Geodesy</button>
+                <button class="subcategoryButton">Python</button>
+                <button class="subcategoryButton">HTML</button>
+                <button class="subcategoryButton">CSS</button>
+                <button class="subcategoryButton">Javascript</button>
+            </aside>
+            <section class="slideList">
+                <div class="slideSelector">
+                    <img src="../src/image/slides/geomatics1/Slide1.PNG" alt="geomatic">
+                </div>
+            </section>
+    
+            <!-- <section class="slide">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS5A0D0BJ9eBQranJBtwtwn8w5iFziNHpA4DEmsYxlwYWDxZNfmaK3ssFLhfli6MfOWylejCV1rU1l4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1080" height="1080" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </section> -->
+        </div>
+    </main>
+
+    <div class="slidesScreen">
+        <!-- <div class="slidesWindow">
+            <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" alt="">
+        </div> -->
+
+        <div class="slidesWindow">
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+            <div class="mySlides fade">
+              <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+                <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+              </div>
+              
+            <div class="mySlides fade">
+                <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+              </div>
+              
+            <div class="mySlides fade">
+                <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+              </div>
+              
+            <div class="mySlides fade">
+                <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+              </div>
+              
+            <div class="mySlides fade">
+                <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+              </div>
+              
+            <div class="mySlides fade">
+                <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+              </div>
+              
+            <div class="mySlides fade">
+                <img class="slideImg" src="../src/image/slides/geomatics1/Slide1.PNG" style="width:100%">
+              </div>
+            
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div class="dotConteiner" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+        <button class="close" onclick="closeWindow()"></button>
+    </div>
+
+
+
+    <script src="../src/javascript/slides.js"></script>
+    <script src="../src/javascript/functionUpdateSlide.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
