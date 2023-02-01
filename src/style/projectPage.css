@@ -1,0 +1,146 @@
+main{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/***************************************************************************************/
+/**************************************** TITLE ****************************************/
+main .title {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .title .text {
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+main .title .contractor {
+    color: #0079B5;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+main .title .client {
+    color: #0079B5;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+main .title .softwares {
+    /* align-self: flex-end; */
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+main .title .softwares img {
+    height: 60px;
+    margin: 15px;
+}
+
+/***************************************************************************************/
+/**************************************** DESCRIPTION **********************************/
+main .intro {
+    background-color: #0079B5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .intro .introImg{
+    background-image: url("../../src/image/projects/thays/Thays.PNG");
+    background-size: 100% auto;
+    background-position: center;
+    filter:  contrast(130%);
+    height: 600px;
+    width: 100%;
+}
+main .intro .introText{
+    height: 350px;
+    width: 100%;
+    padding: 70px 150px; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+main .intro .introText p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+/***************************************************************************************/
+/**************************************** CHAPTERS *************************************/
+main .chapter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .chapter .chapterImg {
+    background-image: url("../../src/image/projects/thays/Thays.PNG");
+    background-size: 100% auto;
+    background-position: center;
+    filter:  contrast(130%);
+    height: 350px;
+    width: 100%;
+}
+main .chapter .subtitle {
+    color: #0079B5;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+main .chapter .part {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .chapter .part .picture {
+    background-image: url("../../src/image/projects/thays/Thays.PNG");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 10px 1px rgb(165, 165, 165);
+    filter:  contrast(130%);
+    width: 400px;
+    height: 250px;
+    
+}
+main .chapter .part .explanation {
+    padding-left: 30px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+main .chapter .part .explanation p {
+    color: gray;
+    font-family: sans-serif;
+    font-size: 25px;
+}

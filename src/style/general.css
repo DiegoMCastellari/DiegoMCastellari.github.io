@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2E303E;
+}
+
+/*************************************** HEADER **************************/
+
+header{
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 7%;
+    background-color: #103F53;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    /* border-bottom: solid 1px darkgrey;
+    box-shadow: 3px 1px 10px 0.5px #ccc; */
+}
+
+header .headerLogo {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 10%;
+    padding: 2%;
+}
+header .headerLogo .headerLogoImg {
+    height: 50px;
+    /* filter:  brightness(0); */
+}
+header .headerLogo .headerLogoText {
+    font-family: 'Bebas Neue', 'Anton', 'Oswald', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+header .headerTitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+
+/***************************** NAVMENU */
+header .navmenu{
+    position: absolute;
+    width: 100%;
+    right: 30px;
+    height: 18%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+header .navmenu .navbutton{
+    background-color: transparent;
+    border: transparent;
+    margin: 25px;
+    z-index: 10;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ACC4;
+}
+header .navmenu .navbutton:hover{
+    color: #fec007;
+}
+/* header .navmenu .navbuttonInactive{
+    background-color: transparent;
+    border: transparent;
+    margin: 25px;
+    z-index: 10;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+ */
+header .headerNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+    height: 10%;
+    padding: 2% 1%;
+}
+header .headerNav .headerContact {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-right: 15px;
+}
+header .headerNav .headerLangImg{
+    height: 50px;
+}
+/*///////////////////////////////////// CONTACT  **********************************/
+header .headerNav {
+    position: absolute;
+    width: 15%;
+    height: 7%;
+    top: 0%;
+    left: 85%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: nowrap;
+    z-index: 20;
+}
+header .headerNav .socialmedia {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: nowrap;
+    z-index: 20;
+}
+header .headerNav .correo {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #FEC007;
+    z-index: 20;
+}
+header .headerNav img {
+    height: 35px;
+    padding-left: 5px;
+}
+
+header .headerNav a {
+    z-index: 20;
+}
+header .headerNav .iconIG, main .shorcuts .iconLI {
+    filter: grayscale(0%) invert(0);
+}
+header .headerNav .iconIG:hover, main .shorcuts .iconLI:hover {
+    filter: grayscale(100%) invert(1);
+}
+header .headerNav .iconGH {
+    filter: invert(0%) sepia(0%) saturate(5606%) hue-rotate(25deg) brightness(96%) contrast(103%);
+    /* opacity: .4; */
+}
+header .headerNav .iconGH:hover {
+    filter: invert(77%) sepia(0%) saturate(1641%) hue-rotate(184deg) brightness(85%) contrast(93%);
+    /* opacity: .4; */
+}
+header .headerNav .iconLI {
+    filter: none;
+    /* opacity: .4; */
+}
+header .headerNav .iconLI:hover {
+    filter: grayscale(100%) invert(1);
+    /* opacity: .4; */
+}

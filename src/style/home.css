@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+/******************************** PHRASE */
+.startWindow .phrase {
+    position: absolute;
+    /* top: 25%;*/
+    left: 7%; 
+    width: 55%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.startWindow .phrase .phraseTitle{
+    font-family: 'Bebas Neue', 'Anton', 'Oswald', sans-serif;
+    font-size: 80px;
+    color: white;
+    z-index: 5;
+}
+.startWindow .phrase .phraseSubTitle{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    color: #fec007;
+    z-index: 5;
+}
+.startWindow .phrase .phraseText{
+    margin-top: 15%;
+    font-family: sans-serif;
+    font-size: 60px;
+    color: #02C6B3; 
+    z-index: 5;
+}
+
+/******************************** IMAGES */
+.startWindow{
+    width: 100%;
+    height: 100vh;
+}
+.startWindow .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.startWindow .background .imgBackground{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    filter:  contrast(130%);
+}
+.startWindow .fadeMask {
+    background: linear-gradient(0.25turn, black, rgba(235, 248, 225, 0), rgba(235, 248, 225, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+
+/***************************** CHANGE LANGUAGE */
+.changeLang {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    margin: 5px;
+}
+.changeLang .headerLangImg{
+    background-color: white;
+    border-radius: 50%;
+    height: 6vh;
+    z-index: 20;
+}
+
+/***************************** NAVMENU */
+.startWindow .navmenu{
+    position: absolute;
+    width: 100%;
+    right: 30px;
+    height: 18%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.startWindow .navmenu .navbutton{
+    background-color: transparent;
+    border: transparent;
+    margin: 25px;
+    z-index: 10;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.startWindow .navmenu .navbutton:hover{
+    color: #02C6B3;
+}
+.startWindow .navmenu .navbuttonInactive{
+    background-color: transparent;
+    border: transparent;
+    margin: 25px;
+    z-index: 10;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+
+/*///////////////////////////////////// CONTACT  **********************************/
+.shorcuts {
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    top: 65%;
+    left: 80%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: nowrap;
+    z-index: 20;
+}
+.shorcuts .socialmedia {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: nowrap;
+    z-index: 20;
+}
+.shorcuts .correo {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #FEC007;
+    z-index: 20;
+}
+.shorcuts img {
+    height: 50px;
+    padding-left: 5px;
+}
+.shorcuts .photoSelf {
+    position: absolute;
+    height: 300px;
+    bottom: 0%;
+    filter: grayscale(1000%) saturate(0.5) contrast(1.2);
+    z-index: 19;
+}
+.shorcuts a {
+    z-index: 20;
+}
+.shorcuts .iconIG, main .shorcuts .iconLI {
+    filter: grayscale(0%) invert(0);
+}
+.shorcuts .iconIG:hover, main .shorcuts .iconLI:hover {
+    filter: grayscale(100%) invert(1);
+}
+.shorcuts .iconGH {
+    filter: invert(0%) sepia(0%) saturate(5606%) hue-rotate(25deg) brightness(96%) contrast(103%);
+    /* opacity: .4; */
+}
+.shorcuts .iconGH:hover {
+    filter: invert(77%) sepia(0%) saturate(1641%) hue-rotate(184deg) brightness(85%) contrast(93%);
+    /* opacity: .4; */
+}
+.shorcuts .iconLI {
+    filter: none;
+    /* opacity: .4; */
+}
+.shorcuts .iconLI:hover {
+    filter: grayscale(100%) invert(1);
+    /* opacity: .4; */
+}
+/*///////////////////////////////////// WHO **********************************/
+
+body .info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+body .info .description {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-family: 'Oswald', 'Bebas Neue', 'Anton', sans-serif;
+    font-size: 35px;
+    color: #02C6B3; 
+}
+
+/*///////////////////////////////////// WHAT **********************************/
+body .info .services {
+    width: 100%;
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+body .info .services .servicesItem {
+    margin-bottom: 20px;
+    height: 360px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+body .info .services .servicesItem .servicesImg {
+    width: 50%;
+    height: 360px;
+}
+body .info .services .servicesItem .servicesText {
+    width: 50%;
+    height: 360px;
+    padding: 0% 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+body .info .services .servicesItem .servicesText .doTitle {
+    color: #103F53;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+body .info .services .servicesItem .servicesText .doPara {
+    color: #0098BE;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-left: 40px;
+}
+
+body .info .services .servicesItem .servicesText .doPara .serviceList {
+    padding-left: 30px;
+}
+
+body .info .services .servicesItem .servicesText .goService {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 5px 15px;
+    font-weight: bold;
+    align-self: flex-end;
+    justify-self: flex-end;
+    text-align: center;
+    background-color: #103F53;
+    color: #02C6B3;
+    border-color: #103F53;
+    border-width: 1px;
+}
+body .info .services .servicesItem .servicesText .goService:hover {
+    background-color: #FEC007;
+    color: #103F53;
+    border-color: #103F53;
+}
