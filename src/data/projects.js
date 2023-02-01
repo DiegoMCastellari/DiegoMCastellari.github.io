@@ -17,7 +17,7 @@ var projectList = [
         "page": "x.html"
     },
     {
-        "name": "CEEU - CIC",
+        "name": "CEEU - CII",
         "description": "Local Goverment KPIs calculation",
         "nombre": "CEEU - CIC",
         "descripcion": "Calculo de índices a nivel de gobiernos locales",
@@ -61,7 +61,7 @@ var projectList = [
         "description": "Road Images Dataset Exploration",
         "nombre": "CVSA",
         "descripcion": "Exploración de un dataset de imágenes", 
-        "image": "9_IGEO_imageClean/rn0008_a_1_0140.111.jpg",
+        "image": "http://drive.google.com/uc?export=view&id=1T7byu6msX2gJrURT_jCatBQRzdKJlXoK",
         "page": "9_IGEO_imageClean.html"
     },
     {
@@ -93,7 +93,7 @@ var projectList = [
         "description": "Suveying for a Landscape Design Project",
         "nombre": "Estudio Thays",
         "descripcion": "Relevamiento topográfico para proyecto de paisajismo",
-        "image": "5_Thays/Thays.PNG",
+        "image": "http://drive.google.com/uc?export=view&id=1ZcIKAst2pof-Lb8pY1Us8enjR00AASHe",
         "page": "5_Thays.html"
     },
     {
@@ -109,7 +109,7 @@ var projectList = [
         "description": "Drone LiDAR point cloud processing",
         "nombre": "Clasificación de Nube de Puntos",
         "descripcion": "Procesamiento de nube de puntos LiDAR capturada desde Drone.",
-        "image": "3_droneservices/drone-lidar-point-cloud-classified.PNG",
+        "image": "http://drive.google.com/uc?export=view&id=1A0ieyyiuM3BGtAyL2-_bV1EICOccOyAa",
         "page": "3_droneservices.html"
     },
     {
@@ -117,7 +117,7 @@ var projectList = [
         "description": "Censal data analysis and visualization",
         "nombre": "Nilus",
         "descripcion": "Análisis y visualización de datos censales",
-        "image": "2_Nilus/caba-map-delivey-points.jpg",
+        "image": "http://drive.google.com/uc?export=view&id=1IFSvMt-DQlfm4WmC4vTXTuAnCqhF5INY",
         "page": "2_Nilus.html"
     },
     {
@@ -127,14 +127,5 @@ var projectList = [
         "descripcion": "descripcion",
         "image": "1_TM_StaFe/IMG-20180926-WA0017.jpg",
         "page": "x.html"
-    },
-    {
-        "name": "FB - Railroad Survey",
-        "description": "description",
-        "nombre": "FB - Relevamiento de FFCC",
-        "descripcion": "descripcion",
-        "image": "0_FB_Salta/IMG-20170916-WA0008.jpg",
-        "page": "x.html"
-    }
-    
+    }    
 ]

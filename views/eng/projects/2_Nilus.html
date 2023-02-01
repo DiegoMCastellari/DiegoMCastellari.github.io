@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diego Castellari</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/home.css">
 
     <link rel="stylesheet" href="../../../src/style/general.css">
     <link rel="stylesheet" href="../../../src/style/projectPage.css">
@@ -12,22 +17,28 @@
 <body>
     <header>
         <div class="headerLogo" onclick="javascript:location.href='../../../index.html'">
-            <img class="headerLogoImg" src="../../../src/image/logo/logo_dc_hexagon_bg.png" alt="">
+            <!-- <img class="headerLogoImg" src="../../src/image/logo/logo_dc_hexagon_bg.png" alt=""> -->
             <div class="headerLogoText">DIEGO CASTELLARI</div>
         </div>
-        <div>
-            <div class="headerTitle" onclick="javascript:location.href='../projects.html'">Projects</div>
-        </div>
+        <menu class="navmenu">
+            <button class="navbutton" onclick="javascript:location.href='../../../index.html'">HOME</button>
+            <button class="navbutton" onclick="javascript:location.href='../cv.html'">WHAT I DO</button>
+            <button class="navbutton" onclick="javascript:location.href='../projects.html'">WHAT I'VE DONE</button>
+        </menu>
         <div class="headerNav">
-            <!-- <div class="headerContact"  onclick="javascript:location.href='../contacto.html'">Contacto</div> -->
-            <!-- <img class="headerLangImg" src="../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='./esp/contacto.html'"> -->
-        </div>
+            <div class="correo">agrimcastellari@gmail.com</div>
+            <a href=""><img class="iconIG" src="../../../src/image/icon/instagram.png" alt=""></a>
+            <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="../../../src/image/icon/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="../../../src/image/icon/linkedin.png" alt=""></a>
+            <!-- <div class="headerContact"  onclick="javascript:location.href='contact.html'">Contact</div>
+            <img class="headerLangImg" src="../../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='../esp/servicios.html'">-->
+        </div> 
     </header>
     <main>
         <section class="title">
             <div class="text">Processing and visualization of census data</div>
             <div class="contractor"></div>
-            <div class="client">Para: <a href="https://www.nilus.co/">Nilus</a></div>
+            <div class="client">For: <a href="https://www.nilus.co/">Nilus</a></div>
             <div class="softwares">
                 <img src="../../../src/image/softwares/python.PNG" alt="">
                 <img src="../../../src/image/softwares/Geopandas.PNG" alt="">
@@ -37,44 +48,44 @@
             </div>
         </section>
         <section class="intro">
-            <div class="introImg" style="background-image: url('../../../src/image/projects/2_Nilus/nilus-intro.PNG');"></div>
+            <div class="introImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1IFSvMt-DQlfm4WmC4vTXTuAnCqhF5INY');"></div>
             <div class="introText"> 
-                <p>Some way was required to be able to determine if the objectives of the company were being met. It was decided to make graphs with which to determine this situation, or if, on the contrary, the tasks that were being carried out were far from the vision of the company. </p> 
+                <p>A solution was required to be able to determine if the objectives of the company were being met. It was decided to make graphs with which to determine this situation, or if, on the contrary, the tasks that were being carried out were far from the vision of the company. </p> 
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/2_Nilus/map-data-points-polygons.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1hYkLfOtA-omMuehkkDPN4A-_zUFD9x71');"></div>
             <div class="subtitle">Data collection and processing</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/2_Nilus/socio-economic-data.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1wtP42JYd-DR1xbdoqv4MTB8nfJ9vwb1l');"></div>
                 <div class="explanation"> 
                     <p>Socio-economic data were necessary for the analysis and decision making, for which INDEC census data were downloaded through REDATAM. </p> 
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/2_Nilus/delivey-point.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1cNjJ3Na3tqWwD8qASauM2opMBbxPcbgp');"></div>
                 <div class="explanation">
                     <p>The data of the delivery points, on which a cleaning was carried out, were provided by Nilus. </p>
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/2_Nilus/gis-data-overlay-spatial-join.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1fIFJhIRwpEBG5Kt6kUNdNxPPTGoYejKd');"></div>
                 <div class="explanation">
                     <p>The data of the delivery points were crossed with the socioeconomic data, such as unemployment, educational level, quality of housing, etc. </p>
                 </div>
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/2_Nilus/data-graphics-plots-matplotlib-plotly.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1lAU0wIAmhK3YeD0YYd4-HrBOZsSjSitq');"></div>
             <div class="subtitle"> Data visualization</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/2_Nilus/map-matplotlib-point.polygons.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1X6C2h8FwNnn3A8IdkBOUrkkBQWMnl9Bf');"></div>
                 <div class="explanation"> 
                     <p>In order to visualize the spatial distribution of the points with respect to the different socio-economic variables, maps were made.</p> 
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/2_Nilus/data-graphic-bar-chart.png');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1UN5LrO_hwi8B5Lfg4iiW9rusNRDjJODY');"></div>
                 <div class="explanation">
                     <p>Histograms, scatter plots and bar graphs were made to be able to visualize the distribution of a variable of the delivery points or to compare some variables against others, always with respect to the total census radios. </p>
                 </div>
