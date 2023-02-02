@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diego Castellari</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/home.css">
 
     <link rel="stylesheet" href="../../../src/style/general.css">
     <link rel="stylesheet" href="../../../src/style/projectPage.css">
@@ -13,22 +18,29 @@
 
     <header>
         <div class="headerLogo" onclick="javascript:location.href='../../../index.html'">
-            <img class="headerLogoImg" src="../../../src/image/logo/logo_dc_hexagon_bg.png" alt="">
+            <!-- <img class="headerLogoImg" src="../../src/image/logo/logo_dc_hexagon_bg.png" alt=""> -->
             <div class="headerLogoText">DIEGO CASTELLARI</div>
         </div>
-        <div>
-            <div class="headerTitle" onclick="javascript:location.href='../projects.html'">Projects</div>
-        </div>
+        <menu class="navmenu">
+            <button class="navbutton" onclick="javascript:location.href='../../../index.html'">HOME</button>
+            <button class="navbutton" onclick="javascript:location.href='../cv.html'">WHAT I DO</button>
+            <button class="navbutton" onclick="javascript:location.href='../projects.html'">WHAT I'VE DONE</button>
+        </menu>
         <div class="headerNav">
-            <!-- <div class="headerContact"  onclick="javascript:location.href='../contacto.html'">Contacto</div> -->
-            <!-- <img class="headerLangImg" src="../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='./esp/contacto.html'"> -->
-        </div>
+            <div class="correo">agrimcastellari@gmail.com</div>
+            <a href=""><img class="iconIG" src="../../../src/image/icon/instagram.png" alt=""></a>
+            <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="../../../src/image/icon/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="../../../src/image/icon/linkedin.png" alt=""></a>
+            <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="../../../src/image/icon/Notion-logo.svg.png" alt=""></a>
+            <!-- <div class="headerContact"  onclick="javascript:location.href='contact.html'">Contact</div>
+            <img class="headerLangImg" src="../../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='../esp/servicios.html'">-->
+        </div> 
     </header>
     <main>
         <section class="title">
             <div class="text">Road Damage Detection from GoPro Video</div>
-            <div class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></div>
             <div class="client">For: <a href="https://corredoresvialessa.com.ar/corredores-viales-nacionales">Corredores Viales S.A.</a></div>
+            <div class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></div>
             <div class="softwares">
                 <img src="../../../src/image/softwares/python.PNG" alt="">
                 <img src="../../../src/image/softwares/pandas.PNG" alt="">
@@ -38,76 +50,76 @@
             </div>
         </section>
         <section class="intro">
-            <div class="introImg" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/intro.PNG');"></div>
+            <div class="introImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1BOQfjXlGLFbgAQk3bf8jT7w9MK88hUf_');"></div>
             <div class="introText"> 
                 <p>In the search for a quick and inexpensive methodology to detect road damages, it was decided to carry out a test by capturing a video of the route, and then process its images through machine learning techniques, managing to identify and locate the damage present on the routes.</p> 
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/goprocar2.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1ZYLCa6SKUkq3PteVq3Nvp52OMhODWReH');"></div>
             <div class="subtitle">Video capture</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/goprocar.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1ZYLCa6SKUkq3PteVq3Nvp52OMhODWReH');"></div>
                 <div class="explanation"> 
                     <p>A GoPro Hero 9 camera was mounted in the front of a vehicle, surveying 50km of route, at low speed.</p> 
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/goproextractos.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1fhMCGGoNceOkj8s6jIeEfCNrBimqNWkJ');"></div>
                 <div class="explanation">
                     <p>Once the video was downloaded from the camera, the GoPro app was used to separate the telemetry metadata from it (<a href="https://goprotelemetryextractor.com/free/">https://goprotelemetryextractor.com/free/</a>).</p>
                 </div>
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/video-gopro-frame.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1hEwiPH0zs_Y-QiPdyrpwFRQzmMRqklco');"></div>
             <div class="subtitle"> Video Processing</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/videoframes.PNG');"></div>
+                <!-- <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=');"></div> -->
                 <div class="explanation">
                     <p>One frame per second was extracted from the video, each one being stored individually as an image.</p>
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/imageposition.PNG');"></div>
+                <!-- <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/imageposition.PNG');"></div> -->
                 <div class="explanation"> 
                     <p>From the telemetry data, the position for each image was determined, by means of the video time correlation, generating a geographical layer of them.</p> 
                 </div>
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/machine-learning-deep-learning.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1IlnjjyeUzed7gkYxXWx5w0ccYXcqK6zi');"></div>
             <div class="subtitle">Machine Learning</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/deep-learning-neural-network.png');"></div>
+                <!-- <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=deep-learning-neural-network.png');"></div> -->
                 <div class="explanation">
                     <p>The images were processed using an object detection deep learning model, winner of the RDDC global competition (<a href="https://rdd2020.sekilab.global/">https://rdd2020.sekilab.global/</a>), considered as state of the art. </p>
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/machine-learning-object-detection-bbox.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1jPs5ov8DPTTeebyAMHfA1Fn9dKyLP5Vg');"></div>
                 <div class="explanation"> 
                     <p>As a result, all the images were obtained with the bounding boxes on them, with their label and probability, and a file with each of the bboxes, with their data and the name of the image to which it belongs. </p> 
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/imageposition.PNG');"></div>
+                <!-- <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/imageposition.PNG');"></div> -->
                 <div class="explanation"> 
                     <p>A grouping of the damages was made for each image, determining the amount of each type of damage and total damages in each image, which were added to the geographic layer.</p> 
                 </div>
             </div>            
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/quality-control.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1Kvk8hHKMZBXn27nGHLnu5FNAYD_jG4m_');"></div>
             <div class="subtitle">Quality Control</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/random-sample.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1pV2aJokqcB5OlbRz-7kJRFP0-4MGAjuG');"></div>
                 <div class="explanation">
                     <p>A random sample of the images was separated to perform a quality control of the result, using the ISO 2859 standard. They were controlled one by one, checking that the detections were correct and that no undetected damage had benn left.</p>
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/10_IGEO_VideoProcess/f1-score-quality-control.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=10us8ckQDlLkLKTKvKS1W9c6r1KnxhSsr');"></div>
                 <div class="explanation"> 
                     <p>With the data generated from the control, the F1 score was calculated to determine its quality.</p> 
                 </div>

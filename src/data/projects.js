@@ -13,39 +13,39 @@ var projectList = [
         "description": "Data cleanning and processing as requiered by ENARGAS SD Protocol",
         "nombre": "MetroGas: Protocolo SD",
         "descripcion": "Limpieza y procesamiento de datos según requerimientos del Protocolo SD de ENARGAS",
-        "image": "15_IGEO_MGAS_SD/intro.png",
-        "page": "x.html"
+        "image": "http://drive.google.com/uc?export=view&id=1cLP7RKITjYe_YBJF4JDKx80QDtzkjY9g",
+        "page": "False"
     },
     {
         "name": "CEEU - CII",
         "description": "Local Goverment KPIs calculation",
         "nombre": "CEEU - CIC",
         "descripcion": "Calculo de índices a nivel de gobiernos locales",
-        "image": "14_ACUMAR_CIC/intro.jpg",
-        "page": "x.html"
+        "image": "http://drive.google.com/uc?export=view&id=1uhX9qLMNkUFEuj4VAhs198DEWREq0Apa",
+        "page": "False"
     },
     {
         "name": "CEEU - ACUMAR",
         "description": "Green public spaces study for ACUMAR",
         "nombre": "CEEU - ACUMAR",
         "descripcion": "Estudio de espacios verdes públicos para ACUMAR",
-        "image": "13_CEEU_ACUMAR/intro.jpg",
-        "page": "x.html"
+        "image": "http://drive.google.com/uc?export=view&id=1PLtexHU-Uh8BK5tfAk4UCNGuULlluBfL",
+        "page": "False"
     },
     {
         "name": "CEEU - MOP",
         "description": "Local Goverment KPIs calculation",
         "nombre": "CEEU - MOP",
         "descripcion": "Calculo de índices a nivel de gobiernos locales",
-        "image": "12_CEEU_MOP/intro.jpg",
-        "page": "x.html"
+        "image": "http://drive.google.com/uc?export=view&id=1CTUb9bzWsbyD_SSWg4eaGBcurnuSB9B3",
+        "page": "False"
     },
     {
         "name": "CVSA",
         "description": "Road Inventory App Development",
         "nombre": "CVSA",
         "descripcion": "Desarrollo de una app de inventario vial",
-        "image": "11_IGEO_CVSA_AppInv/logo.jpg",
+        "image": "http://drive.google.com/uc?export=view&id=1Lx97-N6DxV8wjEC4V9FAHjbBz0hI_XHp",
         "page": "11_IGEO_CVSA_AppInv.html"
     },
     {
@@ -53,7 +53,7 @@ var projectList = [
         "description": "Road Damage Detection on GoPro Video",
         "nombre": "CVSA",
         "descripcion": "Detección de daños en pavimento a partir de un video de GoPro",
-        "image": "10_IGEO_VideoProcess/machine-learning-object-detection-bbox.PNG",
+        "image": "http://drive.google.com/uc?export=view&id=1jPs5ov8DPTTeebyAMHfA1Fn9dKyLP5Vg",
         "page": "10_IGEO_VideoProcess.html"
     },
     {
@@ -66,27 +66,27 @@ var projectList = [
     },
     {
         "name": "Road Engineering Project",
-        "description": "Drone survey for a road design project design in Neuquén (Arg)",
+        "description": "Drone survey for a road design project design in Neuquén (Arg) - with: Mario Marol (TM)",
         "nombre": "Proyecto de Ingeniería de Ruta",
         "descripcion": "Relevamiento drone para un proyecto de ruta en Neuquén (Arg)",
-        "image": "8_TM_Moquehue/IMG-20221024-WA0009.jpg",
-        "page": "x.html"
+        "image": "http://drive.google.com/uc?export=view&id=1sfbwolYumZwF5q23weWlkoVHmJWVVdhN",
+        "page": "False"
     },
     {
         "name": "Voltage Line Engineering Project",
-        "description": "Drone survey for a high voltage line in La Rioja (Arg)",
+        "description": "Drone survey for a high voltage line in La Rioja (Arg) - with: Mario Marol (TM)",
         "nombre": "Proyecto de línea de alta tensión",
         "descripcion": "Relevamiento drone para una línea de alta tensión en La Rioja (Arg)",
-        "image": "7_TM_LaRioja/IMG_20220803_151035.jpg",
-        "page": "x.html"
+        "image": "http://drive.google.com/uc?export=view&id=15omkEvUS2pkEBt6xb_WpH6my01Wk8er1",
+        "page": "False"
     },
     {
         "name": "Limay River Bathimetry",
-        "description": "Limay river survey for hidrography model - Neuquén (Arg)",
+        "description": "Limay river survey for hidrography model - Neuquén (Arg) - with: Mario Marol (TM)",
         "nombre": "Batimetría del río Limay",
         "descripcion": "Relevamiento del río Limay para modelo hidrográfico - Neuquén (Arg)",
-        "image": "6_TM_Limay/IMG_20220422_173606.jpg",
-        "page": "x.html"
+        "image": "http://drive.google.com/uc?export=view&id=1Ht2uDrHdJ6bM9pbE0Zi4LC4n3Q00ZWfX",
+        "page": "False"
     },
     {
         "name": "Estudio Thays",
@@ -98,11 +98,11 @@ var projectList = [
     },
     {
         "name": "Dam Engineering Project",
-        "description": "Drone survey for a dam engineering project in Catamarca (Arg)",
+        "description": "Drone survey for a dam engineering project in Catamarca (Arg) - with: Mario Marol (TM)",
         "nombre": "Proyecto de Represa",
         "descripcion": "Relevamiento drone para un proyecto de represa en Catamarca (Arg)",
-        "image": "4_TM_Catamarca/IMG_20220315_143822.jpg",
-        "page": "x.html"
+        "image": "http://drive.google.com/uc?export=view&id=1jrDJ2e3XfP-p-UdJS4FG-6z-mwjDF39M", 
+        "page": "False"
     },
     {
         "name": "LAS Classification",
@@ -122,10 +122,10 @@ var projectList = [
     },
     {
         "name": "Road Survey for Highway",
-        "description": "description",
+        "description": "Topographic survey for a highway project - with: Mario Marol (TM)",
         "nombre": "Relevamiento de Ruta para Autopista",
         "descripcion": "descripcion",
-        "image": "1_TM_StaFe/IMG-20180926-WA0017.jpg",
-        "page": "x.html"
+        "image": "http://drive.google.com/uc?export=view&id=1eWNAgtpAbsi30-P6nm-ksmX5RvM9vR6X",
+        "page": "False"
     }    
 ]

@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diego Castellari</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/home.css">
 
     <link rel="stylesheet" href="../../../src/style/general.css">
     <link rel="stylesheet" href="../../../src/style/projectPage.css">
@@ -13,22 +18,36 @@
 
     <header>
         <div class="headerLogo" onclick="javascript:location.href='../../../index.html'">
-            <img class="headerLogoImg" src="../../../src/image/logo/logo_dc_hexagon_bg.png" alt="">
+            <!-- <img class="headerLogoImg" src="../../src/image/logo/logo_dc_hexagon_bg.png" alt=""> -->
             <div class="headerLogoText">DIEGO CASTELLARI</div>
         </div>
-        <div>
-            <div class="headerTitle" onclick="javascript:location.href='../projects.html'">Projects</div>
-        </div>
+        <menu class="navmenu">
+            <button class="navbutton" onclick="javascript:location.href='../../../index.html'">HOME</button>
+            <button class="navbutton" onclick="javascript:location.href='../cv.html'">WHAT I DO</button>
+            <button class="navbutton" onclick="javascript:location.href='../projects.html'">WHAT I'VE DONE</button>
+        </menu>
         <div class="headerNav">
-            <!-- <div class="headerContact"  onclick="javascript:location.href='../contacto.html'">Contacto</div> -->
-            <!-- <img class="headerLangImg" src="../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='./esp/contacto.html'"> -->
-        </div>
+            <div class="correo">agrimcastellari@gmail.com</div>
+            <a href=""><img class="iconIG" src="../../../src/image/icon/instagram.png" alt=""></a>
+            <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="../../../src/image/icon/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="../../../src/image/icon/linkedin.png" alt=""></a>
+            <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="../../../src/image/icon/Notion-logo.svg.png" alt=""></a>
+            <!-- <div class="headerContact"  onclick="javascript:location.href='contact.html'">Contact</div>
+            <img class="headerLangImg" src="../../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='../esp/servicios.html'">-->
+        </div> 
     </header>
     <main>
         <section class="title">
             <div class="text">Road Inventory App</div>
-            <div class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></div>
             <div class="client">For: <a href="https://corredoresvialessa.com.ar/corredores-viales-nacionales">Corredores Viales S.A.</a></div>
+            <div class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></div>
+            <div class="team"> Team:
+                <ul>
+                    <li>Emilio Clair - Project Director</li>
+                    <li>Gustavo Torres - Fullstack Developer</li>
+                    <li>Antonio Villar - Geoamtic Eng.</li>
+                </ul>
+            </div>
             <div class="softwares">
                 <img src="../../../src/image/softwares/python.PNG" alt="">
                 <img src="../../../src/image/softwares/arcpy.PNG" alt="">
@@ -42,115 +61,108 @@
             </div>
         </section>
         <section class="intro">
-            <div class="introImg" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/intro.PNG');"></div>
+            <div class="introImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1qi-kP9QSPCM0AjKZUK97ANV8XgjsGzFI');"></div>
             <div class="introText"> 
                 <p>Based on CVSA's need to have a system for better management of inventory data, it was proposed to develop an application that would allow the visualization and exploration of data, both vector and photographic, of the entire road inventory, and a CRUD system. </p> 
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/exploration.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=14ltvp_QnWAC09uoh9Apvge4af5NlRI2X');"></div>
             <div class="subtitle">Exploration</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/exploration-solutions.PNG');"></div>
                 <div class="explanation"> 
                     <p>A study of documentation and applications of solutions implemented successfully for similar purposes was carried out, with the aim of obtaining ideas and knowledge about needs and requirements. </p> 
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/exploration-data.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1x8qt6kFnRcKTbp7NFbMfS4ePYttpjDDS');"></div>
                 <div class="explanation">
                     <p>We carry out an exploratory data analysis to find out which information we had to displayed and develop the application. </p>
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/exploration-meeting.PNG');"></div>
                 <div class="explanation">
                     <p>A first meeting with clients was held, in order to ascertain the expectations and requirements that they initially had. </p>
                 </div>
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/app-design.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1SyskgE31e8VYrgv_w1dCzbn0YTOB6L1c');"></div>
             <div class="subtitle">App design</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/app-design-functions.PNG');"></div>
                 <div class="explanation">
                     <p>The functional requirements were defined, based on the combination of the exploration of similar solutions and the information gathered in the interview.</p>
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/app-design-mockup.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=11FVFLP3DSaUdO78kVQ48AsB9JdOBj8zD');"></div>
                 <div class="explanation"> 
                     <p>As the first presentation of the proposed solution, a model of the application to be developed was made, which covered all the functional requirements. </p> 
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/app-design-team-meeting.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1LxMOI5UyeF2CFghH46PMF2gCunASJYez');"></div>
                 <div class="explanation"> 
                     <p> The proposal was presented to the graphic designers, for the correction of its aesthetics and UX; and to the developers, to detect possible logical problems and to know that possible to develop what was designed. </p> 
                 </div>
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/validation.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1BFs2ASsVnEldTDuC43-vItukitnIafP0');"></div>
             <div class="subtitle">App validation with client</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/validation-client-presentation-meeting.PNG');"></div>
                 <div class="explanation">
                     <p>The proposal was presented to the client, for its validation. From the observations taken, the corrections were made in the model and the functional requirements were refined.</p>
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/validation-user-stories-report.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1PKdSzMVnOiL5UV7da2iXsiSxG5dBBUFt');"></div>
                 <div class="explanation"> 
                     <p> Approved the design of the app, the user stories were detailed for the development of the application</p> 
                 </div>
             </div>            
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/desing.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1pc2TXTJ5mlnJXMkjsgIYcS5BfZ4tpBCj');"></div>
             <div class="subtitle">Model and services design</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/desing-data-model-service.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=18zaZrC5WKRpgvsI0rvOZXVNSP5XI9iHe');"></div>
                 <div class="explanation">
                     <p>With the application already designed, we continued with the design of the data model, map services, webmaps, geoservices, and everything necessary for the development of the application. </p>
                 </div>
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/data-processing.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=1KOfYrPx8TsR1Nwi-XML2heGI6EOXIdfn');"></div>
             <div class="subtitle">Data processing and publication</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/data-processing-cleanning-analysis.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1DeYO5-WeNTOUHElkyfCPIQ6PbcKSxmhv');"></div>
                 <div class="explanation">
                     <p> The data provided by the client was cleaned and processed, and stored in the database, previously created with the designed structure. </p>
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/data-processing-map-service-webmap.PNG');"></div>
                 <div class="explanation">
                     <p> Map services were published from views to the database, from which the necessary webmaps for the application were created. A map service for the CRUD was also created from the layers. </p>
                 </div>
             </div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/data-processing-app-developement.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=17R9_cq06pvCsjAw4bY2RvaC8VaNfXg42');"></div>
                 <div class="explanation">
                     <p> With the services, webmaps and user stories, the application went to development - waiting for it to return for testing. </p>
                 </div>
             </div>
         </section>
         <section class="chapter">
-            <div class="chapterImg" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/delivery-app.PNG');"></div>
+            <div class="chapterImg" style="background-image: url('http://drive.google.com/uc?export=view&id=16YAlvEQeuG5O4J8CT9hclGL5k-vghE7n');"></div>
             <div class="subtitle">App delivery</div>
             <div class="part">
-                <div class="picture" style="background-image: url('../../../src/image/projects/11_IGEO_CVSA_AppInv/delivery-app-user-guide-presentation.PNG');"></div>
+                <div class="picture" style="background-image: url('http://drive.google.com/uc?export=view&id=1-mR7cPKHd8f790lDtcCo0SfshHS0fWbt');"></div>
                 <div class="explanation">
                     <p> After the app was tested and put into production, the customer was inducted to it, along with the delivery of the user manual. </p>
                 </div>
             </div>
         </section>
     </main>
-
-    
 </body>
 </html>
