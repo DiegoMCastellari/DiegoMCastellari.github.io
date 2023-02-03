@@ -65,6 +65,16 @@ main .whatDescription .whatText {
     flex-grow: 1;
 }
 
+main .whatDescription .whatText li {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+main .whatDescription .whatText a {
+    color: #FEC007;
+}
+
 main .whatDescription .whatText .expitem {
     padding-bottom: 10px;
 }
