@@ -58,14 +58,15 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 1;
+    
 }
-.startWindow .background .imgBackground{
+/* .startWindow .background .imgBackground{
     position: absolute;
     width: 100%;
     height: 100vh;
     z-index: 1;
-    filter:  contrast(130%);
-}
+    
+} */
 .startWindow .fadeMask {
     background: linear-gradient(0.25turn, black, rgba(235, 248, 225, 0), rgba(235, 248, 225, 0));
     position: absolute;
