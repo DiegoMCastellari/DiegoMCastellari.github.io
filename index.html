@@ -10,6 +10,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style/home.css">
+    
+    <script src="./src/assets/js/color-modes.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="./src/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./src/style/carousel.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+        .b-example-divider {
+          width: 100%;
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+  
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+  
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+  
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+  
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+  
+        .btn-bd-primary {
+          --bd-violet-bg: #712cf9;
+          --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  
+          --bs-btn-font-weight: 600;
+          --bs-btn-color: var(--bs-white);
+          --bs-btn-bg: var(--bd-violet-bg);
+          --bs-btn-border-color: var(--bd-violet-bg);
+          --bs-btn-hover-color: var(--bs-white);
+          --bs-btn-hover-bg: #6528e0;
+          --bs-btn-hover-border-color: #6528e0;
+          --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+          --bs-btn-active-color: var(--bs-btn-hover-color);
+          --bs-btn-active-bg: #5a23c8;
+          --bs-btn-active-border-color: #5a23c8;
+        }
+  
+        .bd-mode-toggle {
+          z-index: 1500;
+        }
+  
+        .bd-mode-toggle .dropdown-menu .active .bi {
+          display: block !important;
+        }
+      </style>
 
 </head>
 <body>
@@ -21,33 +106,134 @@
     
         <div class="phrase">
             <div class="phraseTitle">DIEGO MANUEL CASTELLARI</div>
-            <div class="phraseSubTitle">Surveyor - Geomatic Engineer </div>
+            <div class="phraseSubTitle">Geomatic Engineer - Spatial Data Science</div>
             <!-- <div class="phraseText">Gain insight through <br> the power of geodata.</div> -->
             <div class="phraseText">Helping to make better decisions <br> through the power of spatial data.</div>
              
         </div>
         <div class="background">
             <!-- style="background-image: url('http://drive.google.com/uc?export=view&id=1tt-x9d-w5iE7BJ61wCEFO1yt38bBMvB-');" -->
-            <img src="http://drive.google.com/uc?export=view&id=1QqWZYndhctyL2Eo5kh6_SmCcYLLY_3hM" alt="gps" class="imgBackground">
-            <!-- <img src="./src/image/home/background.png" alt="gps" class="imgBackground"> -->
+            <!-- <img src="http://drive.google.com/uc?export=view&id=1QqWZYndhctyL2Eo5kh6_SmCcYLLY_3hM" alt="gps" class="imgBackground"> -->
+            <img src="./src/image/home/main.jpg" alt="gps" class="imgBackground">
         </div>
         <div class="fadeMask"></div>
     </section>  
     <div class="shorcuts">
         <img class="photoSelf" src="./src/image/contact/Foto111.png" alt="">
         <div class="socialmedia">
-            <a href=""><img class="iconIG" src="./src/image/icon/instagram.png" alt=""></a>
+            <!-- <a href=""><img class="iconIG" src="./src/image/icon/instagram.png" alt=""></a> -->
             <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="./src/image/icon/github.png" alt=""></a>
             <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="./src/image/icon/linkedin.png" alt=""></a>
             <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="./src/image/icon/Notion-logo.svg.png" alt=""></a>
         </div>
         <div class="correo">agrimcastellari@gmail.com</div>
     </div>
-
+    
     <section class="info">
-        <div class="description">
-            As a Geomatic Engineer, I design solutions to your specific needs, adding value to your projects through the processing and visualization of geographic data. I help obtain and exploit geographic data, improving their decision making process.
+      <div class="description">
+          As a Geomatic Engineer, I design solutions to specific needs, adding value to projects through the processing and visualization of geographic data. I help obtain and exploit geographic data, improving decision making processes.
+      </div>
+    </section>
+
+    <main>
+      <div class="container marketing">
+        <h1>Python Modules</h1>
+        <br><br>
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="./src/image/icon/rasterian.png" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140"></svg>
+            <h2 class="fw-normal">Rasterian</h2>
+            <p>Python module for raster processing and analysis.</p>
+            <p><a class="btn btn-secondary" href="./views/rasterian/main.html">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="./src/image/icon/comingsoon.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140"></svg> 
+            <h2 class="fw-normal">Network</h2>
+            <p>Python module for building and analyse geographic network.</p>
+            <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+          </div><!-- /.col-lg-4 -->
+          <!-- <div class="col-lg-4">
+            <img src="./src/image/icon/comingsoon.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140"></svg>
+            <h2 class="fw-normal">Geostadistics</h2>
+            <p>Python module for spatial statistic analysis.</p>
+             <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>/.col-lg-4 -->
+        </div><!-- /.row -->
+    
+    
+        <!-- START THE FEATURETTES -->
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Data <span class="text-body-secondary">Processing</span></h2>
+            <p class="lead">Whether the data is structured, images, point cloud, using data analysis and machine learning techniques to generate new information and create insight from it. 
+              <ul class="serviceList">
+                  <li>Data Exploration (EDA)</li>
+                  <li>Data Cleaning</li>
+                  <li>Data Wranggling</li>
+                  <li>Topographic Data Processing</li>
+                  <li>Point Cloud Processing</li>
+              </ul> 
+              <!-- <button class="goService" onclick="javascript:location.href='servicesAnalysis.html'">See related project</button> -->
+          </div>
+          <div class="col-md-5">
+            <img src="./src/image/home/dem.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+          </div>
         </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Geodata <span class="text-body-secondary">Analysis</span></h2>
+            <p class="lead">Whether the data is structured, images, point cloud, using data analysis and machine learning techniques to generate new information and create insight from it.
+              <ul class="serviceList">
+                <li>Vector Analysis</li>
+                <li>Raster Analysis</li>
+                <li>Network Analysis</li>
+                <li>Machine Learning</li>
+            </ul> 
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="./src/image/home/machine-learning.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Data <span class="text-body-secondary">Visualization</span></h2>
+            <p class="lead">"A picture is worth a thousand words". Information shown in charts and maps is more easily procesed, letting you make a better understanding of it. 
+              <ul class="serviceList">
+                  <li>Reports</li>
+                  <li>Infographics</li>
+                  <li>Technical Drawing</li>
+                  <li>WebMaps apps design</li>
+                  <li>Dashboards</li>
+              </ul> 
+            </p> 
+          </div>
+          <div class="col-md-5">
+            <img src="./src/image/home/caba-map-delivey-points.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+    
+      </div><!-- /.container -->
+    </main>
+
+
+
+    <!-- <section class="info">        
+
         <div class="servicies">
             <div class="descriptionQuote">
                      
@@ -99,7 +285,7 @@
                                 <li>API creation</li>
                                 <li>Frontend forms design</li>
                             </ul> 
-                        </div><br>
+                        </div><br> 
                         <button class="goService" onclick="javascript:location.href='servicesAnalysis.html'">See related project</button>
                     </div>
                 </section>
@@ -137,6 +323,9 @@
                 </section>
             </div>
         </div>
-    </section>
+    </section> -->
 </body>
+
+<script src="./src/assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>

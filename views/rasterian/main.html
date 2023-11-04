@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Castellari</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/home.css">
+
+    <link rel="stylesheet" href="../../src/style/general.css">
+    <link rel="stylesheet" href="../../src/style/cv.css">
+</head>
+<body>
+
+    <header>
+        <div class="headerLogo" onclick="javascript:location.href='../../index.html'">
+            <div class="headerLogoText">DIEGO CASTELLARI</div>
+        </div>
+        <menu class="navmenu">
+            <button class="navbutton" onclick="javascript:location.href='../../index.html'">HOME</button>
+            <button class="navbutton" onclick="javascript:location.href='./documentation.html'">DOCUMENTATION</button>
+            <button class="navbutton" onclick="javascript:location.href='https://github.com/DiegoMCastellari/Rasterian'">GITHUB</button>
+        </menu>
+        <div class="headerNav">
+            <div class="correo">agrimcastellari@gmail.com</div>
+            <!-- <a href=""><img class="iconIG" src="../../src/image/icon/instagram.png" alt=""></a> -->
+            <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="../../src/image/icon/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="../../src/image/icon/linkedin.png" alt=""></a>
+            <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="../../src/image/icon/Notion-logo.svg.png" alt=""></a>
+        </div> 
+    </header>
+    <main>
+        <section class="name">
+            <div class="phraseTitle"><a href=""><img src="../../src/image/icon/rasterian.png" alt="" class="bd-placeholder-img rounded-circle" width="150" height="150"></a>RASTERIAN</div>
+            <div class="phraseText">Python module to process and analyze satellite raster data. The module can be use to create and correct raster data, make local and global calculations, classify pixels and vectorize it to polygons.</div>
+            <div class="phraseText">Raster data can be read from and saved to files; but all the processing use and return numpy arrays for a faster result.</div>
+        </section>
+
+        <!-- <section class="whatDescription">
+            <div class="whatTitle">Objective</div><br>
+            <div class="whatText">Describe Objectives </div>
+        </section> -->
+        <section class="whatDescription">
+          <div class="whatTitle">Modules</div><br>
+          <div class="whatText">
+            <div class="expitem">
+              <div class="exptitle">Focal Analysis <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
+              <div class="expdesc">
+                Local and global focal analysis functions. 
+                  <ul>
+                      <li>Math Algebra</li>
+                      <li>Index Calculation</li>
+                      <li>Filters</li>
+                      <li>Consolutions (moving window)</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="expitem">
+              <div class="exptitle">Transformation <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
+              <div class="expdesc">
+                Transformation and correction of rasters.
+                  <ul>
+                      <li>Rescale intensity (intensity correction)</li>
+                      <li>Stack bands to raster</li>
+                      <li>Stack a band to existing raster</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="expitem">
+              <div class="exptitle">Vector <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
+              <div class="expdesc">
+                Tools to work with vector type data.
+                  <ul>
+                      <li>Clip raster by polygon bbox</li>
+                      <li>Create raster chips from polygon bbox</li>
+                      <li>Raster to polygons</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="expitem">
+              <div class="exptitle">Classify <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
+              <div class="expdesc">
+                Tools to classify rasters.
+                  <ul>
+                    <li>Breaks classification (manual)</li>
+                    <li>Base+Steps classification (manual)</li>
+                    <li>Statistical classification (quantiles)</li>
+                    <li>Supervised classification</li>
+                    <li>Unsupervised classification</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="expitem">
+              <div class="exptitle">Plot <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
+              <div class="expdesc">
+                Tools to plot image and charts.
+                  <ul>
+                      <li>Plot raster with band combination</li>
+                      <li>Plot band and histogram</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="whatDescription">
+          <div class="whatTitle">Dependences</div><br>
+          <div class="whatText">
+            <div class="expitem">
+              <div class="exptitle">Python Libraries:</div>
+              <ul>
+                <li>Pandas</li>
+                <li>Geopandas</li>
+                <li>Scikit-Image</li>
+                <li>Scikit-Learn</li>
+                <li>Matplotlib</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="whatDescription">
+          <div class="whatTitle">Examples</div><br>
+          <div class="whatText">Exmples of use.-</div>
+        </section>
+    </main>
+</body>
+</html>

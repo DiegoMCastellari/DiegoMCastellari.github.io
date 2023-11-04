@@ -1,0 +1,14 @@
+.function_name{
+    font-size: 28px;
+    font-weight: bold;
+    color: yellow;
+    margin-top: 50px;
+}
+
+.subtitles {
+    font-size: 22px;
+    font-weight: bold;
+    color: #02C6B3;
+    margin-top: 30px;
+    margin-left: 24px;
+}
