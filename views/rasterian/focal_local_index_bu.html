@@ -117,35 +117,37 @@
                 </div>
             </main>
           <div class="text-content" id="doc-content" style="margin:70px; width: 70vw;">
-            <h1>Focal Global Convolution</h1>
+            <h1>Focal Local Index</h1>
 
-            <h3 class="function_name">conv_matrix</h3>
+            <h3 class="function_name">index_bu</h3>
             <p>
-                The function calculates the mean of all the pixels, given a matrix of values (array), applying a moving window.
+                The function calculates the bu index of a image.
+                Build Up Index (BU)
+                BU = NDBI - NDVI
             </p>
-            <p>Call the funciton with two arrays of values, one for the imageb and one for the matrix.</p>
-            <pre class="line-numbers"><code class="language-py">conv_matrix( numpy_array, numpy_array )</code></pre>
-            <p>The function returns for each value, the mean of the results of multiplying each neightbour value by the values in the input matrix.</p>
+            <p>Call the funciton with the image (all bands in order), and satellite program.</p>
+            <pre class="line-numbers"><code class="language-py">index_bu ( image, satellite )</code></pre>
+            <p>The function returns the array of the calculated index.</p>
             <div class="subtitles">Inputs:</div>
             <table class="table table-dark">
               <thead>
                 <tr>
                   <th scope="col">Param</th>
                   <th scope="col">Description</th>
-                  <th scope="col">Default</th>
+                  <th scope="col">Input Data</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">band</th>
-                  <td>array (only one band)</td>
-                  <td>None</td>
-                </tr>                 
-                <tr>
-                  <th scope="row">matrix</th>
-                  <td>array (nxm)</td>
-                  <td>None</td>
+                  <th scope="row">image</th>
+                  <td>Numpy image to use.</td>
+                  <td>narray</td>
                 </tr>
+                <tr>
+                  <th scope="row">satellite</th>
+                  <td>Satellite program.</td>
+                  <td>string: "landsat_7" "landsat_8" "sentinel_2"</td>
+                </tr>                 
               </tbody>
             </table>
             <div class="subtitles">Outputs:</div>
@@ -159,54 +161,33 @@
               <tbody>
                 <tr>
                   <th scope="row">array</th>
-                  <td>Array with the mean values arround each input value, applying the input matrix.</td>
+                  <td>Array with calculated index.</td>
                 </tr>                
               </tbody>
             </table>
             <div class="subtitles">Examples of use:</div>
-            <b>Examples 1 (mean):</b>
+            <b>Examples 1:</b>
             <p>Code Example:</p>
-            <pre class="line-numbers"><code class="language-py">image_band = [
-  [1, 2, 3, 4],
-  [1, 2, 3, 4],
-  [1, 2, 3, 4]
+            <pre class="line-numbers"><code class="language-py">image = [
+  [
+    [1, 1, 1], [1, 1, 1], [1, 1, 1]
+  ],[
+    [1, 1, 1], [1, 1, 1], [1, 1, 1]
+  ],[
+    [1, 1, 1], [1, 1, 1], [1, 1, 1]
+  ],[
+    [1, 1, 1], [1, 1, 1], [1, 1, 1]
+  ],[
+    [1, 1, 1], [1, 1, 1], [1, 1, 1]
+  ],[
+    [1, 1, 1], [1, 1, 1], [1, 1, 1]
+  ],[
+    [1, 1, 1], [1, 1, 1], [1, 1, 1]
+  ]
 ]
 
-input_matrix = [
-  [1, 1, 1],
-  [1, 1, 1],
-  [1, 1, 1]
-]
-conv_matrix( image_band, input_matrix )</code></pre>
-            <p>Result:</p>
-            <pre class="line-numbers"><code class="language-py">[
-  [1.5, 2, 3, 3.5],
-  [1.5, 2, 3, 3.5],
-  [1.5, 2, 3, 3.5]
-]</code></pre>
-            <b>Examples 2:</b>
-            <p>Code Example:</p>
-            <pre class="line-numbers"><code class="language-py">image_band = [
-  [1, 2, 3, 4],
-  [1, 2, 3, 4],
-  [1, 2, 3, 4]
-]
-
-input_matrix = [
-  [2, 1, 0],
-  [2, 1, 0],
-  [2, 1, 0]
-]
-conv_matrix( image_band, input_matrix )</code></pre>
-            <p>Result:</p>
-            <pre class="line-numbers"><code class="language-py">[
-  [0.5, 1.33, 2.33, 5],
-  [0.5, 1.33, 2.33, 5],
-  [0.5, 1.33, 2.33, 5]
-]</code></pre>
-
-
-            
+index_bu ( image, "landsat_7" )</code></pre>
+                    
           </div>
         </div>
     </div>

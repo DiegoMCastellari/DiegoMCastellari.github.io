@@ -117,15 +117,15 @@
                 </div>
             </main>
           <div class="text-content" id="doc-content" style="margin:70px; width: 70vw;">
-            <h1>Focal Global Convolution</h1>
+            <h1>Focal Local Math</h1>
 
-            <h3 class="function_name">conv_matrix</h3>
+            <h3 class="function_name">index_norm</h3>
             <p>
-                The function calculates the mean of all the pixels, given a matrix of values (array), applying a moving window.
+                The function calculates the normlaized value of two bands.
             </p>
-            <p>Call the funciton with two arrays of values, one for the imageb and one for the matrix.</p>
-            <pre class="line-numbers"><code class="language-py">conv_matrix( numpy_array, numpy_array )</code></pre>
-            <p>The function returns for each value, the mean of the results of multiplying each neightbour value by the values in the input matrix.</p>
+            <p>Call the funciton with two arrays of values, one for each band.</p>
+            <pre class="line-numbers"><code class="language-py">index_norm( numpy_array_1, numpy_array_2 )</code></pre>
+            <p>The function returns for each position, the normalized value of the two arrays (between -1 to 1), applying the formula: (numpy_array_2 - numpy_array_1) / (numpy_array_2 + numpy_array_1).</p>
             <div class="subtitles">Inputs:</div>
             <table class="table table-dark">
               <thead>
@@ -137,13 +137,13 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">band</th>
+                  <th scope="row">band 1</th>
                   <td>array (only one band)</td>
                   <td>None</td>
                 </tr>                 
                 <tr>
-                  <th scope="row">matrix</th>
-                  <td>array (nxm)</td>
+                  <th scope="row">band 2</th>
+                  <td>array (only one band)</td>
                   <td>None</td>
                 </tr>
               </tbody>
@@ -159,54 +159,32 @@
               <tbody>
                 <tr>
                   <th scope="row">array</th>
-                  <td>Array with the mean values arround each input value, applying the input matrix.</td>
+                  <td>Array with normalized values.</td>
                 </tr>                
               </tbody>
             </table>
             <div class="subtitles">Examples of use:</div>
-            <b>Examples 1 (mean):</b>
+            <b>Examples 1:</b>
             <p>Code Example:</p>
-            <pre class="line-numbers"><code class="language-py">image_band = [
-  [1, 2, 3, 4],
-  [1, 2, 3, 4],
-  [1, 2, 3, 4]
+            <pre class="line-numbers"><code class="language-py">image_band_1 = [
+  [1, 2, 3],
+  [1, 2, 3],
+  [1, 3, 2]
 ]
 
-input_matrix = [
+image_band_2 = [
   [1, 1, 1],
   [1, 1, 1],
   [1, 1, 1]
 ]
-conv_matrix( image_band, input_matrix )</code></pre>
+
+index_norm( image_band_1, image_band_2 )</code></pre>
             <p>Result:</p>
             <pre class="line-numbers"><code class="language-py">[
-  [1.5, 2, 3, 3.5],
-  [1.5, 2, 3, 3.5],
-  [1.5, 2, 3, 3.5]
-]</code></pre>
-            <b>Examples 2:</b>
-            <p>Code Example:</p>
-            <pre class="line-numbers"><code class="language-py">image_band = [
-  [1, 2, 3, 4],
-  [1, 2, 3, 4],
-  [1, 2, 3, 4]
-]
-
-input_matrix = [
-  [2, 1, 0],
-  [2, 1, 0],
-  [2, 1, 0]
-]
-conv_matrix( image_band, input_matrix )</code></pre>
-            <p>Result:</p>
-            <pre class="line-numbers"><code class="language-py">[
-  [0.5, 1.33, 2.33, 5],
-  [0.5, 1.33, 2.33, 5],
-  [0.5, 1.33, 2.33, 5]
-]</code></pre>
-
-
-            
+  [0, -0.33, -0.5],
+  [0, -0.33, -0.5],
+  [0, -0.5, -0.33]
+]</code></pre>          
           </div>
         </div>
     </div>

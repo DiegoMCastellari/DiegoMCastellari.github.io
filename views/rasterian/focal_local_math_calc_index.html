@@ -117,34 +117,44 @@
                 </div>
             </main>
           <div class="text-content" id="doc-content" style="margin:70px; width: 70vw;">
-            <h1>Focal Global Convolution</h1>
+            <h1>Focal Local Math</h1>
 
-            <h3 class="function_name">conv_matrix</h3>
+            <h3 class="function_name">calc_index</h3>
             <p>
-                The function calculates the mean of all the pixels, given a matrix of values (array), applying a moving window.
+                The function calculates a index value of a image.
             </p>
-            <p>Call the funciton with two arrays of values, one for the imageb and one for the matrix.</p>
-            <pre class="line-numbers"><code class="language-py">conv_matrix( numpy_array, numpy_array )</code></pre>
-            <p>The function returns for each value, the mean of the results of multiplying each neightbour value by the values in the input matrix.</p>
+            <p>Call the funciton with the image input, the position index of the bands (one for each band), and the type of index to calculate.</p>
+            <pre class="line-numbers"><code class="language-py">calc_index ( image, band_1, band_2, index_type )</code></pre>
+            <p>The function returns the array of the calculated index.</p>
             <div class="subtitles">Inputs:</div>
             <table class="table table-dark">
               <thead>
                 <tr>
                   <th scope="col">Param</th>
                   <th scope="col">Description</th>
-                  <th scope="col">Default</th>
+                  <th scope="col">Input Data</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">band</th>
-                  <td>array (only one band)</td>
-                  <td>None</td>
+                  <th scope="row">image</th>
+                  <td>Numpy image to use.</td>
+                  <td>narray</td>
+                </tr>
+                <tr>
+                  <th scope="row">band_1</th>
+                  <td>Band position.</td>
+                  <td>int</td>
                 </tr>                 
                 <tr>
-                  <th scope="row">matrix</th>
-                  <td>array (nxm)</td>
-                  <td>None</td>
+                  <th scope="row">band_2</th>
+                  <td>Band position.</td>
+                  <td>int</td>
+                </tr>
+                <tr>
+                  <th scope="row">index_type</th>
+                  <td>Type of index to calculate.</td>
+                  <td>string : 'band_norm' 'ratio'</td>
                 </tr>
               </tbody>
             </table>
@@ -159,54 +169,35 @@
               <tbody>
                 <tr>
                   <th scope="row">array</th>
-                  <td>Array with the mean values arround each input value, applying the input matrix.</td>
+                  <td>Array with calculated index.</td>
                 </tr>                
               </tbody>
             </table>
             <div class="subtitles">Examples of use:</div>
-            <b>Examples 1 (mean):</b>
+            <b>Examples 1:</b>
             <p>Code Example:</p>
-            <pre class="line-numbers"><code class="language-py">image_band = [
-  [1, 2, 3, 4],
-  [1, 2, 3, 4],
-  [1, 2, 3, 4]
+            <pre class="line-numbers"><code class="language-py">image = [
+  [
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 3, 2]
+  ],[
+    [1, 1, 1],
+    [1, 1, 1],
+    [1, 1, 1]
+  ]
 ]
 
-input_matrix = [
-  [1, 1, 1],
-  [1, 1, 1],
-  [1, 1, 1]
-]
-conv_matrix( image_band, input_matrix )</code></pre>
+band_1 = 2
+band_2 = 1
+
+calc_index ( image, band_1, band_2, 'band_norm' )</code></pre>
             <p>Result:</p>
             <pre class="line-numbers"><code class="language-py">[
-  [1.5, 2, 3, 3.5],
-  [1.5, 2, 3, 3.5],
-  [1.5, 2, 3, 3.5]
-]</code></pre>
-            <b>Examples 2:</b>
-            <p>Code Example:</p>
-            <pre class="line-numbers"><code class="language-py">image_band = [
-  [1, 2, 3, 4],
-  [1, 2, 3, 4],
-  [1, 2, 3, 4]
-]
-
-input_matrix = [
-  [2, 1, 0],
-  [2, 1, 0],
-  [2, 1, 0]
-]
-conv_matrix( image_band, input_matrix )</code></pre>
-            <p>Result:</p>
-            <pre class="line-numbers"><code class="language-py">[
-  [0.5, 1.33, 2.33, 5],
-  [0.5, 1.33, 2.33, 5],
-  [0.5, 1.33, 2.33, 5]
-]</code></pre>
-
-
-            
+  [0, -0.33, -0.5],
+  [0, -0.33, -0.5],
+  [0, -0.5, -0.33]
+]</code></pre>          
           </div>
         </div>
     </div>
