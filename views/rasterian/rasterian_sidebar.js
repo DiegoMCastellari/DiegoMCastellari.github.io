@@ -1,20 +1,34 @@
 var rasterian_sidebar = {
     "General": {
         'tools': [
-            ['tools', 'tools']
+            ['get_meta', 'tools_get_meta.html'],
+            ['image_to_file', 'tools_image_to_file.html'],
+            ['df_to_image', 'tools_df_to_image.html'],
+            ['get_image_to_df', 'tools_image_to_df.html']
         ]
     },
     "sep_1": 'bar',
-    "Classify": {
+    "Classification": {
         'statistics_classification': [
-            ['statistics_classification', 'statistics_classification']
+            ['classify_by_base_and_step', 'classify_statistics_classify_by_base_and_step.html'],
+            ['classify_by_list_of_values', 'classify_statistics_classify_by_list_of_values.html'],
+            ['get_quantile_values', 'classify_statistics_get_quantile_values.html' ],
+            ['classify_by_quantile', 'classify_statistics_classify_by_quantile.html']
         ],
         'supervised_classification': [
-            ['supervised_classification', 'supervised_classification']
-        ],
-        'unsupervised_classification': [
-            ['unsupervised_classification', 'unsupervised_classification']
+            ['clean_samples', 'classify_supervised_clean_samples.html'],
+            ['map_classes_to_id', 'classify_supervised_map_classes_to_id.html'],
+            ['select_class_to_predict', 'classify_supervised_select_class_to_predict.html'],
+            ['prepare_df_sample', 'classify_supervised_prepare_df_sample.html'],
+            ['split_sample', 'classify_supervised_split_sample.html'],
+            ['train_model', 'classify_supervised_train_model.html'],
+            ['search_model', 'classify_supervised_search_model.html'],
+            ['predict_model', 'classify_supervised_predict_model.html']
         ]
+        /* ,
+        'unsupervised_classification': [
+            []
+        ] */
     },
     "Focal Analysis": {
         'global_convolution': [

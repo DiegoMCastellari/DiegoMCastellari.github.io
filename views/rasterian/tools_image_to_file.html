@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Castellari</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../src/style/home.css">
+    
+    <script src="../../src/assets/js/color-modes.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../../src/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../src/style/sidebars.css" rel="stylesheet">
+    <link href="../../src/style/prism.css" rel="stylesheet">
+    <link href="../../src/style/documentation.css" rel="stylesheet" >
+
+    <style>
+
+
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+        .b-example-divider {
+          width: 100%;
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+  
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+  
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+  
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+  
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+  
+        .btn-bd-primary {
+          --bd-violet-bg: #712cf9;
+          --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  
+          --bs-btn-font-weight: 600;
+          --bs-btn-color: var(--bs-white);
+          --bs-btn-bg: var(--bd-violet-bg);
+          --bs-btn-border-color: var(--bd-violet-bg);
+          --bs-btn-hover-color: var(--bs-white);
+          --bs-btn-hover-bg: #6528e0;
+          --bs-btn-hover-border-color: #6528e0;
+          --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+          --bs-btn-active-color: var(--bs-btn-hover-color);
+          --bs-btn-active-bg: #5a23c8;
+          --bs-btn-active-border-color: #5a23c8;
+        }
+  
+        .bd-mode-toggle {
+          z-index: 1500;
+        }
+  
+        .bd-mode-toggle .dropdown-menu .active .bi {
+          display: block !important;
+        }
+      </style>
+</head>
+<body>
+    <div class="container-fluid" style="height: 100vh;">
+        <div class="row">
+            <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+           
+            <main class="d-flex flex-nowrap">
+                <div id="rasterian_sidebar" class="flex-shrink-0 p-3" style="width: 280px;">
+                    <a href="./main.html" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+                    <img src="../../src/image/icon/rasterian.png" alt="" class="bd-placeholder-img rounded-circle" width="50" height="50"></svg>
+                    <span class="fs-5 fw-semibold">Rasterian</span>
+                    </a>
+                    
+                </div>
+                </div>
+            </main>
+          <div class="text-content" id="doc-content" style="margin:70px; width: 70vw;">
+            <h1>General Tools</h1>
+
+            <h3 class="function_name">image_to_file</h3>
+            <p>
+                The function saves a numpy array to a raster file.
+            </p>
+            <p>Call the funciton with an array image, the raster metadata and the path of the raster to save.</p>
+            <pre class="line-numbers"><code class="language-py">image_to_file ( image, meta, output_raster_path )</code></pre>
+            <p>The function saves the numpy image array to a raster file in disk.</p>
+            <div class="subtitles">Inputs:</div>
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Param</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Input Data</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">image</th>
+                  <td>Numpy image.</td>
+                  <td>narray</td>
+                </tr>   
+                <tr>
+                  <th scope="row">meta</th>
+                  <td>Metadata of raster file to save.</td>
+                  <td>dictionary</td>
+                </tr>
+                <tr>
+                  <th scope="row">output_raster_path</th>
+                  <td>Raster file path to save.</td>
+                  <td>string (path)</td>
+                </tr>             
+              </tbody>
+            </table>
+            <div class="subtitles">Outputs:</div>
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Data type</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"> </th>
+                  <td> </td>
+                </tr>                
+              </tbody>
+            </table>                    
+          </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="./rasterian_sidebar.js"></script>
+<script src="../../src/javascript/sidebar_html.js"></script>
+
+<script src="../../src/assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/javascript/sidebars.js"></script>
+<!-- <script src="../../src/javascript/prism.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-python.min.js"></script>
+
+
+
+</html>
