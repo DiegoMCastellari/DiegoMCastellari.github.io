@@ -62,23 +62,31 @@ var rasterian_sidebar = {
     },
     "Plot Img": {
         'plot': [
-            ['plot', 'plot']
+            ['plot_color', 'plot_plot_color.html'],
+            ['plot_band_and_hist', 'plot_plot_band_and_hist.html']
         ]
     },
     "Transformation": {
         'scale_intensity_correction': [
-            ['scale_intensity_correction',  'stack']
+            ['rescale_intensity',  'trans_scale_rescale_intensity.html'],
+            ['equalize_hist',  'trans_scale_equalize_hist.html'],
+            ['equalize_adapthist',  'trans_scale_equalize_adapthist.html'],
+            ['scale_intensity',  'trans_scale_scale_intensity.html']
         ],
         'stack': [
-            ['scale_intensity_correction',  'stack']
+            ['stack_bands',  'trans_stack_stack_bands.html'],
+            ['create_stacked_raster',  'trans_stack_create_stacked_raster.html'],
+            ['stack_new_bands_to_raster',  'trans_stack_stack_new_bands_to_raster.html']
         ]
     },
     "Vector": {
         'clip': [
-            ['clip', 'transformation']
+            ['clip_raster_by_polygon', 'vector_clip_clip_raster_by_polygon.html'],
+            ['create_raster_samples_tiles', 'vector_clip_create_raster_samples_tiles.html'],
+            ['create_raster_samples_gdf', 'vector_clip_create_raster_samples_gdf.html']
         ],
         'transformation': [
-            ['clip', 'transformation']
+            ['raster_to_polygon', 'vector_transformation_raster_to_polygon.html']
         ]
     },
     "sep_2": 'bar',
