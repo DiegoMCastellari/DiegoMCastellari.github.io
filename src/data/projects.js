@@ -9,6 +9,14 @@ var projectList = [
         "page": "surveyingThays.html"
     } */ 
     {
+        "name": "Pluspetrol",
+        "description": "Human activity footprint detection with raster data.",
+        "nombre": "Pluspetrol",
+        "descripcion": "Detectión de intervención por actividad humana a partir de datos raster.",
+        "image": "../src/image/projects/20_Pluspetrol_FootprintDetection/logo.JPG",
+        "page": "20_Pluspetrol_FootprintDetection.html"
+    },
+    {
         "name": "MetroGas: SD Protocol",
         "description": "Data cleanning and processing as requiered by ENARGAS SD Protocol",
         "nombre": "MetroGas: Protocolo SD",
