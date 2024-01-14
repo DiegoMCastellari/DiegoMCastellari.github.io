@@ -45,14 +45,14 @@
     </header>
     <main>
 
-        <section class="title" style="background-image: url('../../src/image/projects/20_Pluspetrol_FootprintDetection/indexes.JPG');">
+        <section class="title" style="background-image: url('../../src/image/projects/19_MetroGas_ProtocoloSD/metrogas.JPG');">
             <div class="title_data">
-                <div class="name">Enviromental Impact Detection</div>
-                <div class="client">For: <a href="https://www.pluspetrol.net/">Pluspetrol</a></div>
+                <div class="name">SD Protocol</div>
+                <div class="client">For: <a href="https://www.metrogas.com.ar/">Metrogas</a></div>
                 <div class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></div>
                 <div class="team"> Team:
                     <ul>
-                        <li>Elvio Perez - Lead</li>
+                        <li>Jorge Volpe - Project Director</li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +65,7 @@
 
         <section class="intro">
             <div class="introText"> 
-                <p>Due to the intervention of human activity, the natural vegetation in the production zones is destroy, mainly by new roads and facilities, while the enviromental team tries to recover areas out of production. Pluspetrol needed to know the yearly amount of enviromental inpact in the production zones, by detecting the area of natural vegetation affected by human activity and the area of recovered vegetation. The detection and measure of this changing areas was made using satellite images.</p>
+                <p>Due to a request from ENARGAS (National Gas Regulatory Entity), all the geographic data of facilities, pipelines and stations needed to be delivered in shapefile files with an already designed data structure (known as SD Protocol), with a specific name. The data provided by Metrogas was procesed building an ETL model, which transformed and saved the data from a FGDB to the requiered shapefiles.</p>
             </div>
         </section>
 
@@ -74,60 +74,59 @@
             <!-- <hr class="featurette-divider"> -->
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">Data Adquisition<span class="text-body-secondary"></span></h2>
-                    <p class="lead">Due to a short budget for this first stage project, there´s no money for buying images, so we download Sentinel 2-a images from the Copernicus Hub Page (https://dataspace.copernicus.eu/browser/). For the objective of the project, we used the blue, red and NIR 10m bands, and the SWIR 20m band.
+                    <h2 class="featurette-heading fw-normal lh-1">Files Preparation<span class="text-body-secondary"></span></h2>
+                    <p class="lead">All the data structure requested for each file was created in empty shapefiles. This files were used as data models to create the resulting files. Also a copy of this files were created insede a FGDB, to save the the data resulting from the ETL proceses, before creating the delivered shapefiles.
                 </div>
                 <div class="col-md-5">
-                    <img src="../../src/image/projects/20_Pluspetrol_FootprintDetection/dataadquisition.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                    <img src='../../src/image/projects/19_MetroGas_ProtocoloSD/fgdb.JPG' alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="featurette-divider" style="color:#212529">
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1"> Raster processing</h2>
-                    <p class="lead">For the clasificaction of pixels in natural vegetation area and human impact area, we used the ndvi and bsi indexes. Using arcpy, we calculate the sum of both indexes, because it separates roads and facilities from natural soil, while the both where a complement to discard areas of bare natural soil. <br> Then, with the index images was created a mosaic and clipped to the producction zones extend.
+                    <h2 class="featurette-heading fw-normal lh-1"> <span class="text-body-secondary">ETL Process</span></h2>
+                    <p class="lead">Jupyter notebooks with all the processing and transformation model were created. Each process read the original Metrogas data, processed it and saved it into the FGDB. The process included renaming columns names and creating new ones, encoding column's values acording to a given domain, cleanning dirty data, overlaying with other layers...
                     </p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img src="../../src/image/projects/20_Pluspetrol_FootprintDetection/indexes.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                    <img src="../../src/image/projects/19_MetroGas_ProtocoloSD/notebooks.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="featurette-divider" style="color:#212529">
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1"> Time change detection</h2>
-                    <p class="lead">The previous process was run for to set of images of different years, so the changes could be detected. Using de minus arcpy function, we get teh difference of both mosaics.<br>The changes from natural vegetation to road or facility could easily be recognized. By counting the number of pixels and multiplying it by the surface covered by each one, we could get the affected area.<br>When the operations star, we spect we could also detect the recovered roads and facilities.
+                    <h2 class="featurette-heading fw-normal lh-1"> <span class="text-body-secondary">Files Creation</span></h2>
+                    <p class="lead">Finally the clean and structured data in the FGDB was saved into shapefiles, created with the structure of the empty ones, and a specific name, containing the name of the company, the name of the object, the date of the delivery, etc.
                     </p> 
                 </div>
                 <div class="col-md-5">
-                    <img src="../../src/image/projects/20_Pluspetrol_FootprintDetection/timedetection.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                    <img src="../../src/image/projects/19_MetroGas_ProtocoloSD/shapefiles.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="featurette-divider">
         </div>
 
-        <div class="subtitle">Result</div>
+        <!-- <div class="subtitle">Result</div>
         <div class="container marketing">
             <div class="row featurette">
                 <div class="col-md-7">
-                    <p class="lead">The project was no delivered yet.-
+                    <p class="lead">Explain result and client respond
                 </div>
                 <div class="col-md-5">
-                    <img src="../../src/image/projects/20_Pluspetrol_FootprintDetection/timedetection.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                    <img src="http://drive.google.com/uc?export=view&id=1SyskgE31e8VYrgv_w1dCzbn0YTOB6L1c" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="featurette-divider">
-        </div>
+        </div> -->
         
         <div class="subtitle">Lessons</div>
         <div class="list-group" style="margin-bottom: 100px;">
-            <a class="list-group-item list-group-item-action list-group-item-primary">New tool learned: ArcPy Minus.</a>
-            <a class="list-group-item list-group-item-action list-group-item-success">The combination of correct indexes could end up in better results.</a>
-            <a class="list-group-item list-group-item-action list-group-item-danger">I tried to calculate the indexes with images of different resolution. I had to resample the SWIR 20m band to 10m first, before applying the math.</a>
-            <a class="list-group-item list-group-item-action list-group-item-light">To investigate: a better way to get the pixel values cuts, for the last image (to not hardcode it).</a>
-            <a class="list-group-item list-group-item-action list-group-item-light">To investigate: try with machine learnning classification model.</a>
+            <a class="list-group-item list-group-item-action list-group-item-success">With arcpy, use sanitize_columns=True to keep data structure when saving a Feature Class</a>
+            <a class="list-group-item list-group-item-action list-group-item-success">With arcpy, use the in_memory saving not to create a lot of Feature Classes in the FGDB</a>
         </div>
     </main>
 </body>
+
 <script src="../../src/assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>

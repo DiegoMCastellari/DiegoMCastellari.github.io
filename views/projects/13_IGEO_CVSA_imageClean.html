@@ -45,27 +45,23 @@
     </header>
     <main>
 
-        <section class="title" style="background-image: url('../../src/image/projects/20_Pluspetrol_FootprintDetection/indexes.JPG');">
+        <section class="title" style="background-image: url('../../src/image/projects/13_IGEO_CVSA_imageClean/intro.JPG');">
             <div class="title_data">
-                <div class="name">Enviromental Impact Detection</div>
-                <div class="client">For: <a href="https://www.pluspetrol.net/">Pluspetrol</a></div>
+                <div class="name">Road Images Dataset Exploration</div>
+                <div class="client">For: <a href="https://corredoresvialessa.com.ar/corredores-viales-nacionales">Corredores Viales S.A.</a></div>
                 <div class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></div>
-                <div class="team"> Team:
-                    <ul>
-                        <li>Elvio Perez - Lead</li>
-                    </ul>
-                </div>
             </div>
             <div class="softwares">
                 <img src="../../src/image/softwares/python.PNG" alt="">
                 <img src="../../src/image/softwares/arcpy.PNG" alt="">
                 <img src="../../src/image/softwares/arcgispro.PNG" alt="">
+                <img src="../../src/image/softwares/sqlserver.PNG" alt="">
             </div>
         </section>
 
         <section class="intro">
             <div class="introText"> 
-                <p>Due to the intervention of human activity, the natural vegetation in the production zones is destroy, mainly by new roads and facilities, while the enviromental team tries to recover areas out of production. Pluspetrol needed to know the yearly amount of enviromental inpact in the production zones, by detecting the area of natural vegetation affected by human activity and the area of recovered vegetation. The detection and measure of this changing areas was made using satellite images.</p>
+                <p>Around 2.4 million images were available corresponding to 3,500km of national routes, corresponding to sections I to VI, and the quality of this data set was needed to be known, because it would be used for future applications and analysis.</p>
             </div>
         </section>
 
@@ -74,33 +70,33 @@
             <!-- <hr class="featurette-divider"> -->
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">Data Adquisition<span class="text-body-secondary"></span></h2>
-                    <p class="lead">Due to a short budget for this first stage project, there´s no money for buying images, so we download Sentinel 2-a images from the Copernicus Hub Page (https://dataspace.copernicus.eu/browser/). For the objective of the project, we used the blue, red and NIR 10m bands, and the SWIR 20m band.
+                    <h2 class="featurette-heading fw-normal lh-1">Merging <span class="text-body-secondary"></span></h2>
+                    <p class="lead">The 2.4 million images were grouped into groups of 2000 images, separated by section, route, direction and camera; each group with a metadata csv file.All the images were copied to a single location and the files were merged into one. 
                 </div>
                 <div class="col-md-5">
-                    <img src="../../src/image/projects/20_Pluspetrol_FootprintDetection/dataadquisition.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                    <img src="../../src/image/projects/13_IGEO_CVSA_imageClean/images.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="featurette-divider" style="color:#212529">
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1"> Raster processing</h2>
-                    <p class="lead">For the clasificaction of pixels in natural vegetation area and human impact area, we used the ndvi and bsi indexes. Using arcpy, we calculate the sum of both indexes, because it separates roads and facilities from natural soil, while the both where a complement to discard areas of bare natural soil. <br> Then, with the index images was created a mosaic and clipped to the producction zones extend.
+                    <h2 class="featurette-heading fw-normal lh-1"> <span class="text-body-secondary">Exploration</span></h2>
+                    <p class="lead">Correction of incorrect values, due to errors in the data or values ​​in different units. Analysis of grouped information by sections, routes, directions and cameras, to, for example, know the number of images per route. Analysis of information from image files and csv data, and the crossing of these two, for example, to determine missing images. 
                     </p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img src="../../src/image/projects/20_Pluspetrol_FootprintDetection/indexes.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                    <img src="../../src/image/projects/13_IGEO_CVSA_imageClean/python_coding.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="featurette-divider" style="color:#212529">
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1"> Time change detection</h2>
-                    <p class="lead">The previous process was run for to set of images of different years, so the changes could be detected. Using de minus arcpy function, we get teh difference of both mosaics.<br>The changes from natural vegetation to road or facility could easily be recognized. By counting the number of pixels and multiplying it by the surface covered by each one, we could get the affected area.<br>When the operations star, we spect we could also detect the recovered roads and facilities.
+                    <h2 class="featurette-heading fw-normal lh-1"> <span class="text-body-secondary">Report</span></h2>
+                    <p class="lead">Charts were generated for the report, along with photos and tables, to facilitate the understanding of the data and results. A report was written detailing the analysis carried out, the results found, and the conclusions reached, proposing actions to be taken. 
                     </p> 
                 </div>
                 <div class="col-md-5">
-                    <img src="../../src/image/projects/20_Pluspetrol_FootprintDetection/timedetection.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                    <img src="../../src/image/projects/13_IGEO_CVSA_imageClean/barchart.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="featurette-divider">
@@ -110,10 +106,10 @@
         <div class="container marketing">
             <div class="row featurette">
                 <div class="col-md-7">
-                    <p class="lead">The project was no delivered yet.-
+                    <p class="lead">A report was delivered to the client, with all the findings about the images dataset, and all the actions needed to take in order to clean it and make it useful to the following process of machine learning damage detection</p>
                 </div>
                 <div class="col-md-5">
-                    <img src="../../src/image/projects/20_Pluspetrol_FootprintDetection/timedetection.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                    <img src="../../src/image/projects/13_IGEO_CVSA_imageClean/report.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
                 </div>
             </div>
             <hr class="featurette-divider">
@@ -121,13 +117,18 @@
         
         <div class="subtitle">Lessons</div>
         <div class="list-group" style="margin-bottom: 100px;">
-            <a class="list-group-item list-group-item-action list-group-item-primary">New tool learned: ArcPy Minus.</a>
-            <a class="list-group-item list-group-item-action list-group-item-success">The combination of correct indexes could end up in better results.</a>
-            <a class="list-group-item list-group-item-action list-group-item-danger">I tried to calculate the indexes with images of different resolution. I had to resample the SWIR 20m band to 10m first, before applying the math.</a>
-            <a class="list-group-item list-group-item-action list-group-item-light">To investigate: a better way to get the pixel values cuts, for the last image (to not hardcode it).</a>
-            <a class="list-group-item list-group-item-action list-group-item-light">To investigate: try with machine learnning classification model.</a>
+            <a class="list-group-item list-group-item-action list-group-item-success">Learned: using reference linear sistems to locate images to route.</a>
+            <a class="list-group-item list-group-item-action list-group-item-success">Learned: avoid using to much "fors" for looping.</a>
+            <a class="list-group-item list-group-item-action list-group-item-success">Learned: always end the report with a call to action for each error to fix in the exploration.</a>
+            <a class="list-group-item list-group-item-action list-group-item-danger">Errors: the conclution of the report only listed the errors found in the exploration, but give no solution to each one of them.</a>
+            <a class="list-group-item list-group-item-action list-group-item-danger">Errors: don't copy files from one computer to another using code (it crashed the server).</a>
+            
         </div>
+
+
     </main>
 </body>
+
 <script src="../../src/assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>

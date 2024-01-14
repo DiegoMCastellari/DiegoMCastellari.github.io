@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Castellari</title>
+
+    <script src="../../src/assets/js/color-modes.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../../src/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../src/style/general.css">
+    <link rel="stylesheet" href="../../src/style/projectPage.css">
+
+    
+
+</head>
+<body>
+
+    <header>
+        <div class="headerLogo" onclick="javascript:location.href='../../index.html'">
+            <!-- <img class="headerLogoImg" src="../../src/image/logo/logo_dc_hexagon_bg.png" alt=""> -->
+            <div class="headerLogoText">DIEGO CASTELLARI</div>
+        </div>
+        <menu class="navmenu">
+            <button class="navbutton" onclick="javascript:location.href='../../index.html'">HOME</button>
+            <button class="navbutton" onclick="javascript:location.href='../cv.html'">WHAT I DO</button>
+            <button class="navbutton" onclick="javascript:location.href='../projects.html'">WHAT I'VE DONE</button>
+        </menu>
+        <div class="headerNav">
+            <div class="correo">agrimcastellari@gmail.com</div>
+            <!-- <a href=""><img class="iconIG" src="../../../src/image/icon/instagram.png" alt=""></a> -->
+            <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="../../src/image/icon/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="../../src/image/icon/linkedin.png" alt=""></a>
+            <!-- <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="../../../src/image/icon/Notion-logo.svg.png" alt=""></a> -->
+            <!-- <div class="headerContact"  onclick="javascript:location.href='contact.html'">Contact</div>
+            <img class="headerLangImg" src="../../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='../esp/servicios.html'">-->
+        </div> 
+    </header>
+    <main>
+
+        <section class="title" style="background-image: url('../../src/image/projects/06_Nilus/intro.JPG');">
+            <div class="title_data">
+                <div class="name">Processing and visualization of census data</div>
+                <div class="client">For: <a href="https://www.nilus.co/">Nilus</a></div>
+            </div>
+            <div class="softwares">
+                <img src="../../../src/image/softwares/python.PNG" alt="">
+                <img src="../../../src/image/softwares/Geopandas.PNG" alt="">
+                <img src="../../../src/image/softwares/plotly.PNG" alt="">
+                <img src="../../../src/image/softwares/matplotlib.PNG" alt="">
+                <img src="../../../src/image/softwares/redatam.PNG" alt="">
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="introText"> 
+                <p>A solution was required to be able to determine if the objectives of the company were being met. It was decided to make graphs with which to determine this situation, or if, on the contrary, the tasks that were being carried out were far from the vision of the company.</p>
+            </div>
+        </section>
+
+        <div class="subtitle">Process</div>
+        <div class="container marketing">
+            <!-- <hr class="featurette-divider"> -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Data collection and processing <span class="text-body-secondary"></span></h2>
+                    <p class="lead">Socio-economic data were necessary for the analysis and decision making, for which INDEC census data were downloaded through REDATAM. The data of the delivery points, on which a cleaning was carried out, were provided by Nilus. The data of the delivery points were crossed with the socioeconomic data, such as unemployment, educational level, quality of housing, etc. 
+                </div>
+                <div class="col-md-5">
+                    <img src="../../src/image/projects/06_Nilus/map.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider" style="color:#212529">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Data visualization <span class="text-body-secondary"></span></h2>
+                    <p class="lead">In order to visualize the spatial distribution of the points with respect to the different socio-economic variables, maps were made. Histograms, scatter plots and bar graphs were made to be able to visualize the distribution of a variable of the delivery points or to compare some variables against others, always with respect to the total census radios.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="../../src/image/projects/06_Nilus/histogram.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+    </main>
+</body>
+
+<script src="../../src/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
