@@ -113,10 +113,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: darkgrey
 }
 .startWindow .navmenu .navbutton:hover{
-    color: #02C6B3;
+    color: #FEC007; /* #02C6B3; */
 }
 .startWindow .navmenu .navbuttonInactive{
     background-color: transparent;
@@ -188,7 +188,7 @@ body {
     /* opacity: .4; */
 }
 .shorcuts .iconLI {
-    filter: none;
+    filter: grayscale(100%) contrast(500%);
     /* opacity: .4; */
 }
 .shorcuts .iconLI:hover {
