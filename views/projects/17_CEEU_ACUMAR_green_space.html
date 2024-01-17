@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Castellari</title>
+
+    <script src="../../src/assets/js/color-modes.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../../src/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../src/style/general.css">
+    <link rel="stylesheet" href="../../src/style/projectPage.css">
+
+    
+
+</head>
+<body>
+
+    <header>
+        <div class="headerLogo" onclick="javascript:location.href='../../index.html'">
+            <!-- <img class="headerLogoImg" src="../../src/image/logo/logo_dc_hexagon_bg.png" alt=""> -->
+            <div class="headerLogoText">DIEGO CASTELLARI</div>
+        </div>
+        <menu class="navmenu">
+            <button class="navbutton" onclick="javascript:location.href='../../index.html'">HOME</button>
+            <button class="navbutton" onclick="javascript:location.href='../cv.html'">WHAT I DO</button>
+            <button class="navbutton" onclick="javascript:location.href='../projects.html'">WHAT I'VE DONE</button>
+        </menu>
+        <div class="headerNav">
+            <div class="correo">agrimcastellari@gmail.com</div>
+            <!-- <a href=""><img class="iconIG" src="../../../src/image/icon/instagram.png" alt=""></a> -->
+            <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="../../src/image/icon/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="../../src/image/icon/linkedin.png" alt=""></a>
+            <!-- <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="../../../src/image/icon/Notion-logo.svg.png" alt=""></a> -->
+            <!-- <div class="headerContact"  onclick="javascript:location.href='contact.html'">Contact</div>
+            <img class="headerLangImg" src="../../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='../esp/servicios.html'">-->
+        </div> 
+    </header>
+    <main>
+
+        <section class="title" style="background-image: url('../../src/image/projects/17_CEEU_ACUMAR_green_space/intro.JPG');">
+            <div class="title_data">
+                <div class="name">Green public spaces study</div>
+                <div class="client">For: <a href="https://www.acumar.gob.ar/">ACUMAR</a></div>
+                <div class="contractor">With: <a href="https://ceeu.unsam.edu.ar/">CEEU</a></div>
+                <div class="team"> Team:
+                    <ul>
+                        <li>Carolina Chantril - Project Leader</li>
+                        <li>Ivana Pruden - Landscape Designer</li>
+                        <li>Antonia Rubinstein - Landscape Designer</li>
+                        <li>Ignacio Caro Solís - Economist / Data Scientist</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="softwares">
+                <img src="../../src/image/softwares/python.PNG" alt="">
+                <img src="../../src/image/softwares/pandas.png" alt="">
+                <img src="../../src/image/softwares/Geopandas.PNG" alt="">
+                <img src="../../src/image/softwares/networkx.JPG" alt="">
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="introText"> 
+                <p>Analysis of green public spaces in multiple departments near the Riachuelo-Matanza river, for a better understanding of the service situation and problems, and the proposal of actions to take to make them a better place for the citizens.</p>
+            </div>
+        </section>
+
+        <div class="subtitle">Process</div>
+        <div class="container marketing">
+            <!-- <hr class="featurette-divider"> -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Data Collection <span class="text-body-secondary"></span></h2>
+                    <p class="lead">A green public space layer was built with data from different goverment's pages and OSM data, merged and cleaned to get a single layer. Then, with a hard work of watching basemaps, a quality control was made, to remove polygons that weren't public spaces or add were it's needed, and to control the field consistency. With the layer clean, some fields were calculated by overlaping with other layers. Finally, a clean and high quality green public spaces layer was built.
+                </div>
+                <div class="col-md-5">
+                    <img src="../../src/image/projects/17_CEEU_ACUMAR_green_space/public_spaces.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider" style="color:#212529">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Accessibility and coverage analysis<span class="text-body-secondary"></span></h2>
+                    <p class="lead">An analysis to calculate the accessibility to each space and the coverage of its services was made. All the travel times to each public space for each street was made using a network analysis method, and the coverage area for each of the services provided by them, using a buffer analysis. The coverage areas were intersected against each others to summarize the overlaping services.    
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="../../src/image/projects/17_CEEU_ACUMAR_green_space/travel_time.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider" style="color:#212529">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1"> Service quality estimation<span class="text-body-secondary"></span></h2>
+                    <p class="lead">With the accessibility and coverage data of each public space and the data from the census radios, an estimation of the amount of m² and travel time per habitant of each radio was made. Each estimation was calculated as a weighted media of the overlaped polygons, defining a unique value of accessibility and coverage for each radio.
+                    </p> 
+                </div>
+                <div class="col-md-5">
+                    <img src="../../src/image/projects/17_CEEU_ACUMAR_green_space/radios_cobertura.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider" style="color:#212529">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Population survey<span class="text-body-secondary"></span></h2>
+                    <p class="lead">A survey was carry on by a consultancy in each department. The objective of the survey was to collect data about the population, to know their relationchip with each public space. The data collected was analyzed, and the outcomes and conclusions presented in the report.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="../../src/image/projects/17_CEEU_ACUMAR_green_space/survey_chart.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider" style="color:#212529">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Report <span class="text-body-secondary"></span></h2>
+                    <p class="lead">With all the data collected and generated, and with help of basemaps and google street view, the landscape expert took some study cases -the most representatives of each typology- for an analysis of the state and service quality of the public space, to make some recommendations of improvements.
+                    </p> 
+                </div>
+                <div class="col-md-5">
+                    <img src="../../src/image/projects/17_CEEU_ACUMAR_green_space/report.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <br>
+            <hr class="featurette-divider">
+        </div>
+
+        <div class="subtitle">Result</div>
+        <div class="container marketing">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <p class="lead">A report was delivered, with the explanation of the data analysis methodology, the result of each one of this analysis, visualized with charts and maps, and the final findigns, conclusions and call to action. </p>
+                    <p class="lead">To the date, the analysis was made in 4 different departments -improving the process and outcome with each new oportunity-, what let us know that the study it's helpfull and of value for the client.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="../../src/image/projects/17_CEEU_ACUMAR_green_space/final_report.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <br>
+            <hr class="featurette-divider">
+        </div>
+        
+        <div class="subtitle">Lessons</div>
+        <div class="list-group" style="margin-bottom: 100px;">
+            <a class="list-group-item list-group-item-action list-group-item-primary">New tool used: NetworkX (replacing ArcGIS geometric network)</a>
+            <a class="list-group-item list-group-item-action list-group-item-success">Learned: the creation of a method to calculate the weighted media of buffer polygons</a>
+            <a class="list-group-item list-group-item-action list-group-item-success">Learned: the coding of a travel time calculation method from a point and polygon location along a street</a>
+            <a class="list-group-item list-group-item-action list-group-item-danger">Mistake: lack of topology in the street layer</a>
+            <a class="list-group-item list-group-item-action list-group-item-danger">Mistake: when aggregate buffer areas variables, use contained; if not, the sum will take not only the overlaping or contained polygons, but the neighbors too</a>
+            <a class="list-group-item list-group-item-action list-group-item-light">To investigate: faster way to calculate travel time (improve code)</a>
+            <a class="list-group-item list-group-item-action list-group-item-light">To investigate: creation/existance of a public space quality index</a>
+        </div>
+    </main>
+</body>
+
+<script src="../../src/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

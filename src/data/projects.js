@@ -45,17 +45,17 @@ var projectList = [
         "description": "Green public spaces study for ACUMAR",
         "nombre": "CEEU - ACUMAR",
         "descripcion": "Estudio de espacios verdes públicos para ACUMAR",
-        "image": "../src/image/icon/comingsoon.jpg",
-        "page": "False"
+        "image": "../src/image/projects/17_CEEU_ACUMAR_green_space/logo.JPG",
+        "page": "17_CEEU_ACUMAR_green_space.html"
     },
-    {
+/*     {
         "name": "CEEU - MOP",
         "description": "Local Goverment KPIs calculation",
         "nombre": "CEEU - MOP",
         "descripcion": "Calculo de índices a nivel de gobiernos locales",
         "image": "../src/image/icon/comingsoon.jpg",
         "page": "False"
-    },
+    }, */
     {
         "name": "CVSA",
         "description": "Road Inventory App Design",
