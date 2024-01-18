@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Castellari</title>
 
+    <script src="../src/assets/js/color-modes.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../src/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -14,141 +19,168 @@
     <link rel="stylesheet" href="../src/style/cv.css">
 </head>
 <body>
-
-    <header>
-        <div class="headerLogo" onclick="javascript:location.href='../index.html'">
-            <!-- <img class="headerLogoImg" src="../../src/image/logo/logo_dc_hexagon_bg.png" alt=""> -->
-            <div class="headerLogoText">DIEGO CASTELLARI</div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 10px 40px; ">
+        <a class="navbar-brand headerLogoText" href="../index.html">DIEGO CASTELLARI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                <a class="nav-link navbutton" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link navbutton" href="./aboutme.html">ME</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link navbutton" href="./projects.html">WHAT I'VE DONE</a>
+                </li>
+            </ul>            
         </div>
-        
-        <menu class="navmenu">
-            <button class="navbutton" onclick="javascript:location.href='../index.html'">HOME</button>
-            <button class="navbutton" onclick="javascript:location.href='./aboutme.html'">ME</button>
-            <button class="navbutton" onclick="javascript:location.href='./projects.html'">WHAT I'VE DONE</button>
-        </menu>
-
         <div class="headerNav">
             <div class="correo">agrimcastellari@gmail.com</div>
-            <a href=""><img class="iconIG" src="../src/image/icon/instagram.png" alt=""></a>
             <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="../src/image/icon/github.png" alt=""></a>
             <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="../src/image/icon/linkedin.png" alt=""></a>
             <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="../src/image/icon/Notion-logo.svg.png" alt=""></a>
-            <!-- <div class="headerContact"  onclick="javascript:location.href='contact.html'">Contact</div>
-            <img class="headerLangImg" src="../../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='../esp/servicios.html'">-->
-        </div> 
-    </header>
+        </div>
+    </nav>
+
     <main>
 
         <section class="name">
-            <div class="phraseTitle">DIEGO MANUEL CASTELLARI</div>
-            <div class="phraseSubTitle">Surveyor - Geomatic Engineer </div>
-            <div class="phraseText">Interested in combining geomatics, data science and solution design to solve problems, and to explore, understand and improve society and enviroment. </div>
+            <h1 class="phraseTitle">DIEGO MANUEL CASTELLARI </h1>
+            <h2 class="phraseSubTitle">Surveyor - Geomatic Engineer </h2>
+            <h3 class="phraseText">Interested in combining geomatics, data science and solution design to solve problems, and to explore, understand and improve society and enviroment.</h3>
         </section>
-        <img src="../src/image/CV/graph.JPG" alt="" width="600" height="600">
-        <section class="whatDescription">
-            <div class="whatTitle">What I do?</div><br>
-            <div class="whatText">As a Geomatic Engineer, I design solutions to specific problems, adding value to projects through the processing, analysis and visualization of geographic data. </div>
-        </section>
+        <img src="../src/image/CV/graph.JPG" class="img-fluid" alt="Responsive image">
 
-        <section class="whatDescription">
-            <div class="whatTitle">Areas of Knowledge</div><br>
-            <div class="whatText">
-                <div class="expitem">
-                    <div class="exptitle">Geomatics and Spatial Data Science</div>
+        <br>
+        <div class="container marketing">
+            <hr class="featurette-divider">
+            <br>
+            <div class="row featurette">
+                <div class="col-md-3">
+                    <h2 class="featurette-heading fw-normal lh-1 whatTitle">What I do?</h2>
+                                    </div>
+                <div class="col-md-7">
+                    <p class="lead whatText">As a Geomatic Engineer, I design solutions to specific problems, adding value to projects through the processing, analysis and visualization of geographic data.</p>
                 </div>
-                <ul>
-                    Mainly:
-                    <li>Spatial data exploration, cleanning and manipulation/wrangling;</li>
-                    <li>Spatial data analysis;</li>
-                    <li>Spatial data visualizations - map design;</li>
-                    <li>Geostatistic analysis;</li>
-                    <li>Machine and Deep Learning;</li>
-                    <li>ETL geoprocesses;</li>
-                    
-                    <br>
-                    Also:
-                    <li>Problem diagnosis and solution design (critical thinking);</li>
-                    <li>Surveying: topography, geodesy, drones, etc.;</li>
-                    <li>Web scrapping;</li>
-                    <li>Design and implementation of geoprocesses;</li>
-                    <li>Design and implementation of databases;</li>
-                    <li>Business layer definition and creation (API);</li>
-                    <li>Design and prototype of web apps and dashboards;</li>
-                    <li>Coding of web apps;</li>
-
-                    <br>
-                    Tools:
-                    <li>Coding languages: Python, SQL, Javascript, HTML, CSS;</li>
-                    <li>GIS Softwares: QGIS, Arcgis Pro, ArcMap.</li>
-                    <li>Technical Softwares: CAD, Civil 3D, Terrasolid.</li>
-                </ul>    
             </div>
-        </section>
-        <section class="whatDescription">
-            <div class="whatTitle">Formation</div><br>
-            <div class="whatText">
-                <ul>
-                    Academic:
-                    <li>Land Surveying Engineering - UNLP (Arg.) **distinguished graduate**</li>
-                    <li>Master in Geomatics - UNLP (Arg.) ** no degree, still owing thesis **</li>
-                    <br>
-                    Courses:
-                    <li>Data Science - Digital House</li>
-                    <li>Full Stack - Digital House</li>
-                    <li>SQL - Coderhouse</li>
-                    <li>Python - Coderhouse</li>
-                    <li>Deep Learning for Computer Vision - UNLP (Arg.)</li>
-                </ul>    
-            </div>
-        </section>
-        <section class="whatDescription">
-            <div class="whatTitle">Experience</div><br>
-            <div class="whatText">
-                <div class="expitem">
-                    <div class="exptitle">CEEU : Nov 2021 - Still Working <a href="https://ceeu.unsam.edu.ar/">>>></a></div>
-                    <div class="expdesc">
-                        GIS technician in urban planning projects.
+            <hr class="featurette-divider">
+            <br>
+            <div class="row featurette">
+                <div class="col-md-3">
+                    <h2 class="featurette-heading fw-normal lh-1 whatTitle">Areas of Knowledge</h2>
+                                    </div>
+                <div class="col-md-7 whatText" >
+                    <div class="expitem">
+                        <div class="exptitle">Geomatics and Spatial Data Science</div>
+                    </div>
+                    <ul>
+                        Mainly:
+                        <li>Spatial data exploration, cleanning and manipulation/wrangling;</li>
+                        <li>Spatial data analysis;</li>
+                        <li>Spatial data visualizations - map design;</li>
+                        <li>Geostatistic analysis;</li>
+                        <li>Machine and Deep Learning;</li>
+                        <li>ETL geoprocesses;</li>
+                        
+                        <br>
+                        Also:
+                        <li>Problem diagnosis and solution design (critical thinking);</li>
+                        <li>Surveying: topography, geodesy, drones, etc.;</li>
+                        <li>Web scrapping;</li>
+                        <li>Design and implementation of geoprocesses;</li>
+                        <li>Design and implementation of databases;</li>
+                        <li>Business layer definition and creation (API);</li>
+                        <li>Design and prototype of web apps and dashboards;</li>
+                        <li>Coding of web apps;</li>
+    
+                        <br>
+                        Tools:
+                        <li>Coding languages: Python, SQL, Javascript, HTML, CSS;</li>
+                        <li>GIS Softwares: QGIS, Arcgis Pro, ArcMap.</li>
+                        <li>Technical Softwares: CAD, Civil 3D, Terrasolid.</li>
+                    </ul>    </p>
+                </div>
+                <hr class="featurette-divider">
+                <br>
+                <div class="row featurette">
+                    <div class="col-md-3">
+                        <h2 class="featurette-heading fw-normal lh-1 whatTitle">Formation</h2>
+                                        </div>
+                    <div class="col-md-7 whatText">
                         <ul>
-                            <li>Geographic data adquisition and processing.</li>
+                            Academic:
+                            <li>Land Surveying Engineering - UNLP (Arg.) **distinguished graduate**</li>
+                            <li>Master in Geomatics - UNLP (Arg.) ** no degree, still owing thesis **</li>
+                            <br>
+                            Courses:
+                            <li>Data Science - Digital House</li>
+                            <li>Full Stack - Digital House</li>
+                            <li>SQL - Coderhouse</li>
+                            <li>Python - Coderhouse</li>
+                            <li>Deep Learning for Computer Vision - UNLP (Arg.)</li>
                         </ul>
                     </div>
                 </div>
-                <div class="expitem">
-                    <div class="exptitle">IGEO : Sep 2019 - Still Working <a href="http://www.consultoraigeo.com.ar/">>>></a></div>
-                    <div class="expdesc">
-                        GIS technician using ArcGIS technology, in cadastral, roads and gas aplications.
-                        <ul>
-                            <li>Geographic data processing.</li>
-                            <li>Database analysis, design and implementation.</li>
-                            <li>Building geographic processes</li>
-                            <li>App design and testing</li>
-                            <li>Publish geographic services.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="expitem">
-                    <p class="exptitle">Sebastián Anapolsky : Nov 2019 - Jun 2020</p>
-                    <div class="expdesc">
-                        Geographic censal and mobility data for <a href="https://www.caf.com/">CAF</a>.
-                    </div>
-                </div>
-                <div class="expitem">
-                    <div class="exptitle">OPISU : Dic 2018 - Dic 2019</div>
-                    <div class="expdesc">
-                        GIS analyst in province goverment, in urban planning projects.
+                <hr class="featurette-divider">
+                <br>
+                <div class="row featurette">
+                    <div class="col-md-3">
+                        <h2 class="featurette-heading fw-normal lh-1 whatTitle">Experience</h2>
+                                        </div>
+                    <div class="col-md-7 whatText">
+                        <div class="expitem">
+                            <div class="exptitle">CEEU : Nov 2021 - Still Working <a href="https://ceeu.unsam.edu.ar/">>>></a></div>
+                            <div class="expdesc">
+                                GIS technician in urban planning projects.
+                                <ul>
+                                    <li>Geographic data adquisition and processing.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="expitem">
+                            <div class="exptitle">IGEO : Sep 2019 - Still Working <a href="http://www.consultoraigeo.com.ar/">>>></a></div>
+                            <div class="expdesc">
+                                GIS technician using ArcGIS technology, in cadastral, roads and gas aplications.
+                                <ul>
+                                    <li>Geographic data processing.</li>
+                                    <li>Database analysis, design and implementation.</li>
+                                    <li>Building geographic processes</li>
+                                    <li>App design and testing</li>
+                                    <li>Publish geographic services.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="expitem">
+                            <p class="exptitle">Sebastián Anapolsky : Nov 2019 - Jun 2020</p>
+                            <div class="expdesc">
+                                Geographic censal and mobility data for <a href="https://www.caf.com/">CAF</a>.
+                            </div>
+                        </div>
+                        <div class="expitem">
+                            <div class="exptitle">OPISU : Dic 2018 - Dic 2019</div>
+                            <div class="expdesc">
+                                GIS analyst in province goverment, in urban planning projects.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="softimg">
-            <!-- sotfwares -->
+            <hr class="featurette-divider" style="color:#212529">
+
+        </div>
+        
+        <!-- <section class="softimg">
+            
             <img class="softimgitem" src="../src/image/softwares/civil3d.png" alt="">
             <img class="softimgitem" src="../src/image/softwares/terrasolid.jpg" alt="">
             <img class="softimgitem" src="../src/image/softwares/lastool.png" alt="">
             <img class="softimgitem" src="../src/image/softwares/qgis.png" alt="">
             <img class="softimgitem" src="../src/image/softwares/arcgispro.PNG" alt="">
             <img class="softimgitem" src="../src/image/softwares/arcpy.PNG" alt=""> 
-            <!-- code -->
+            
             <img class="softimgitem" src="../src/image/softwares/vscode.PNG" alt="">
             <img class="softimgitem" src="../src/image/softwares/jupyter.PNG" alt="">
             <img class="softimgitem" src="../src/image/softwares/python.PNG" alt="">
@@ -159,20 +191,20 @@
             <img class="softimgitem" src="../src/image/softwares/opencv.PNG" alt="">
             <img class="softimgitem" src="../src/image/softwares/scikitlearn_logo.png" alt="">
             <img class="softimgitem" src="../src/image/softwares/pytorch.PNG" alt="">
-            <!-- database -->
+            
             <img class="softimgitem" src="../src/image/softwares/sql.jpg" alt="">
             <img class="softimgitem" src="../src/image/softwares/postgreSQL_PostGIS.png" alt="">
             <img class="softimgitem" src="../src/image/softwares/MySQL.PNG" alt="">
             <img class="softimgitem" src="../src/image/softwares/sqlserver.PNG" alt="">
             <img class="softimgitem" src="../src/image/softwares/dbarchitect.PNG" alt="">
-            <!-- webdev -->
+            
             <img class="softimgitem" src="../src/image/softwares/HTML.png" alt="">
             <img class="softimgitem" src="../src/image/softwares/JS.jpg" alt="">
             <img class="softimgitem" src="../src/image/softwares/CSS.png" alt="">
             <img class="softimgitem" src="../src/image/softwares/leaflet.png" alt="">
             <img class="softimgitem" src="../src/image/softwares/node.png" alt="">
             <img class="softimgitem" src="../src/image/softwares/figma.PNG" alt="">
-        </section>
+        </section> -->
     </main>
 </body>
 </html>

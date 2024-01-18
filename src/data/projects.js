@@ -33,12 +33,12 @@ var projectList = [
         "page": "19_MetroGas_ProtocoloSD.html"
     },
     {
-        "name": "CEEU - BID PUENTE",
-        "description": "Local Goverment KPIs calculation",
-        "nombre": "CEEU - CIC",
-        "descripcion": "Calculo de índices a nivel de gobiernos locales",
-        "image": "../src/image/icon/comingsoon.jpg",
-        "page": "False"
+        "name": "CEEU - BID",
+        "description": "Analysis of the Impact of a New Bridge",
+        "nombre": "CEEU - BID",
+        "descripcion": "Analysis of the Impact of a New Bridge",
+        "image": "../src/image/projects/18_CEEU_BID_puente/logo.JPG",
+        "page": "18_CEEU_BID_puente.html"
     },
     {
         "name": "CEEU - ACUMAR",

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Castellari</title>
+
+    <script src="../../src/assets/js/color-modes.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../../src/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../src/style/general.css">
+    <link rel="stylesheet" href="../../src/style/projectPage.css">
+
+    
+
+</head>
+<body>
+
+    <header>
+        <div class="headerLogo" onclick="javascript:location.href='../../index.html'">
+            <!-- <img class="headerLogoImg" src="../../src/image/logo/logo_dc_hexagon_bg.png" alt=""> -->
+            <div class="headerLogoText">DIEGO CASTELLARI</div>
+        </div>
+        <menu class="navmenu">
+            <button class="navbutton" onclick="javascript:location.href='../../index.html'">HOME</button>
+            <button class="navbutton" onclick="javascript:location.href='../aboutme.html'">ME</button>
+            <button class="navbutton" onclick="javascript:location.href='../cv.html'">WHAT I DO</button>
+            <button class="navbutton" onclick="javascript:location.href='../projects.html'">WHAT I'VE DONE</button>
+        </menu>
+        <div class="headerNav">
+            <div class="correo">agrimcastellari@gmail.com</div>
+            <!-- <a href=""><img class="iconIG" src="../../../src/image/icon/instagram.png" alt=""></a> -->
+            <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="../../src/image/icon/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="../../src/image/icon/linkedin.png" alt=""></a>
+            <!-- <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="../../../src/image/icon/Notion-logo.svg.png" alt=""></a> -->
+            <!-- <div class="headerContact"  onclick="javascript:location.href='contact.html'">Contact</div>
+            <img class="headerLangImg" src="../../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='../esp/servicios.html'">-->
+        </div> 
+    </header>
+    <main>
+
+        <section class="title" style="background-image: url('../../src/image/projects/18_CEEU_BID_puente/bridge.JPG');">
+            <div class="title_data">
+                <div class="name">Analysis of the Impact of a New Bridge</div>
+                <div class="client">For: <a href="https://www.iadb.org/es">BID</a></div>
+                <div class="contractor">With: <a href="https://ceeu.unsam.edu.ar/">CEEU</a></div>
+                <div class="team"> Team:
+                    <ul>
+                        <li>Carolina Chantril - Project Leader</li>
+                        <li>Federico Catalano - Data Science</li>
+                        <li>Laura Fernandez - Urban Planner</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="softwares">
+                <img src="../../src/image/softwares/python.PNG" alt="">
+                <img src="../../src/image/softwares/pandas.PNG" alt="">
+                <img src="../../src/image/softwares/Geopandas.PNG" alt="">
+                <img src="../../src/image/softwares/rasterio.JPG" alt="">
+                <img src="../../src/image/softwares/scikitlearn_logo.png" alt="">
+                <img src="../../src/image/softwares/qgis.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="introText"> 
+                <p>A new second bridge was near being started to connect the cities of Resistencia and Corrientes. Because there was no study and nobody knew the consecuences of the new bridge, we're asked to evaluate the socio-economic impact of it. </p>
+            </div>
+        </section>
+
+        <div class="subtitle">Process</div>
+        <div class="container marketing">
+            <!-- <hr class="featurette-divider"> -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Data Adquisition </h2>
+                    <p class="lead">For the analysis that were needed to produce, differeent types of data was adquired. Sentinel 2 images were downloaded from the Copernicus hub and Landsat images from the USGS page; census data was downloaded from the INDEC page; neighborhoods distribution of both cities were digitalized; hidrological and roads data was downloaded from the IGN's services.
+                </div>
+                <div class="col-md-5">
+                    <img src="../../src/image/projects/18_CEEU_BID_puente/adquisition.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider" style="color:#212529">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1"> <span class="text-body-secondary">Urban Growth</span></h2>
+                    <p class="lead">Sentinel and Landsat images were classify to generate the urban footprints of each cities, for three different years. With this data was posibly to determine the size of each city every year and how cities grew from year to year.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="../../src/image/projects/18_CEEU_BID_puente/footprint.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider" style="color:#212529">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1"> <span class="text-body-secondary">Topographic Model</span></h2>
+                    <p class="lead">Using a dem model and layer of rivers and lakes, a topographic map was created to analysis the low level zones of the cities. 
+                    </p> 
+                </div>
+                <div class="col-md-5">
+                    <img src="../../src/image/projects/18_CEEU_BID_puente/hidro.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider" style="color:#212529">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1"> <span class="text-body-secondary">Disimilitud and Correlarion Index</span></h2>
+                    <p class="lead">To understand the socio-economic structure and distribution of both cities, a disimilitud index was calculated with the censal radio data, to create clusters of socio-economic groups. <br>
+                    Also a Local Moran's I index was created, to analize the cluster and outliers of the economic distribution in each city.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="../../src/image/projects/18_CEEU_BID_puente/index.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <hr class="featurette-divider" style="color:#212529">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1"> <span class="text-body-secondary">Report</span></h2>
+                    <p class="lead">With all the data and maps generated, a report was delivered, with all the methodologies and processes developed, and the analysis and conclusions of the urban experts.
+                    </p> 
+                </div>
+                <div class="col-md-5">
+                    <img src="../../src/image/projects/18_CEEU_BID_puente/report.JPG" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <br>
+            <hr class="featurette-divider">
+        </div>
+        
+        <div class="subtitle">Lessons</div>
+        <div class="list-group" style="margin-bottom: 100px;">
+            <a class="list-group-item list-group-item-action list-group-item-primary">New tool: rasterio</a>
+            <a class="list-group-item list-group-item-action list-group-item-success">Learned: develop a way to calculate indexes in a dinamic way, by neighbor area of interest</a>
+            <a class="list-group-item list-group-item-action list-group-item-success">Learned: play and mix basemaps to get the one you need</a>
+            <a class="list-group-item list-group-item-action list-group-item-danger">Mistakes: to process rasters, use numpy narrays (saves time).</a>
+            <a class="list-group-item list-group-item-action list-group-item-light">To investigate: how to predict urban growth to the future</a>
+        </div>
+
+
+    </main>
+</body>
+
+<script src="../../src/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

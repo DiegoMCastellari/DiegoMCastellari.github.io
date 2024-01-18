@@ -11,8 +11,8 @@ main{
 /*///////////////////////////////////// WHAT **********************************/
 main .name {
     width: 70%;
-    height: 40vh;
-    padding: 0% 5%;
+    height: auto;
+    padding: 50px 5%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -21,19 +21,16 @@ main .name {
 }
 main .name .phraseTitle{
     font-family: 'Bebas Neue', 'Anton', 'Oswald', sans-serif;
-    font-size: 80px;
     color: white;
     z-index: 5;
 }
 main .name .phraseSubTitle{
     font-family: 'Oswald', sans-serif;
-    font-size: 50px;
     color: #fec007;
     z-index: 5;
 }
 main .name .phraseText {
     font-family: 'Oswald', sans-serif;
-    font-size: 32px;
     color: #0098BE;
     z-index: 5;
 }
@@ -46,49 +43,43 @@ main .whatDescription {
     align-items: flex-start;
     justify-content: center;
 }
-main .whatDescription .whatTitle {
-    width: 30%;
-    padding: 5% 5%;
+main .whatTitle {
     font-family: 'Oswald', sans-serif;
-    font-size: 54px;
+    font-size: 36px;
     font-weight: bold;
     color: #0098BE;
 }
-main .whatDescription .whatText {
-    width: 40%;
-    padding: 5% 5%;
+main .whatText {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 32px;
     font-weight: bold;
     color: white;
-    text-align: start;
-    flex-grow: 1;
 }
 
-main .whatDescription .whatText li {
+main .whatText li {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 26px;
-    color: white;
-}
-
-main .whatDescription .whatText a {
-    color: #FEC007;
-}
-
-main .whatDescription .whatText .expitem {
-    padding-bottom: 10px;
-}
-main .whatDescription .whatText .expitem .exptitle {
-    font-size: 32px;
-    font-weight: bold;
-    color: #02C6B3;
-}
-main .whatDescription .whatText .expitem .expdesc {
     font-size: 24px;
     color: white;
 }
-main .whatDescription .whatText .expitem .expdesc ul{
-    padding-left: 35px;
+
+main .whatText a {
+    color: #FEC007;
+}
+
+main .whatText .expitem {
+    padding-bottom: 10px;
+}
+main .whatText .expitem .exptitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #02C6B3;
+}
+main .whatText .expitem .expdesc {
+    font-size: 24px;
+    color: white;
+}
+main .whatText .expitem .expdesc ul{
+    padding-left: 24px;
     font-weight: normal;
 }
 
