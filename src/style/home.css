@@ -227,6 +227,9 @@ body {
         left: 50%; */
         padding-bottom: 30px;
     }
+    .shorcuts .photoSelf {
+        display: none;
+    }
  }
 /*///////////////////////////////////// WHO **********************************/
 
