@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Castellari</title>
 
+    <script src="../../src/assets/js/color-modes.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../../src/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Bebas+Neue&family=Inter&family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/style/home.css">
+    <!-- <link rel="stylesheet" href="./src/style/home.css"> -->
 
     <link rel="stylesheet" href="../../src/style/general.css">
-    <link rel="stylesheet" href="../../src/style/cv.css">
+    <link rel="stylesheet" href="../../src/style/rasterian.css">
 </head>
 <body>
 
@@ -34,98 +39,122 @@
         </div> 
     </header>
     <main>
-        <section class="name">
-            <div class="phraseTitle"><a href=""><img src="../../src/image/icon/rasterian.png" alt="" class="bd-placeholder-img rounded-circle" width="150" height="150"></a>RASTERIAN</div>
-            <div class="phraseSubTitle">Python module to process and analyze satellite raster data.</div>
-            <div class="phraseText">The module can be use to create and correct raster data, make local and global calculations, classify pixels and vectorize it to polygons.</div>
-            <div class="phraseText">Raster data can be read from and saved to files; but all the processing use and return numpy arrays for a faster result.</div>
-        </section>
 
-        <!-- <section class="whatDescription">
-            <div class="whatTitle">Objective</div><br>
-            <div class="whatText">Describe Objectives </div>
-        </section> -->
-        <section class="whatDescription">
-          <div class="whatTitle">Modules</div><br>
-          <div class="whatText">
-            <div class="expitem">
-              <div class="exptitle">Focal Analysis <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
-              <div class="expdesc">
-                Local and global focal analysis functions. 
-                  <ul>
+      <section class="name">
+        <h1 class="phraseTitle"><a href=""><img src="../../src/image/icon/rasterian.png" alt="" class="bd-placeholder-img rounded-circle" width="150" height="150"></a>RASTERIAN </h1>
+        <h2 class="phraseSubTitle">Python module to process and analyze satellite raster data. </h2>
+        <h3 class="phraseText">The module can be use to create and correct raster data, make local and global calculations, classify pixels and vectorize it to polygons. Raster data can be read from and saved to files; but all the processing use and return numpy arrays for a faster result.</h3>
+      </section>
+
+      <br>
+        <div class="container marketing">
+            <hr class="featurette-divider">
+            <br>
+            <div class="row featurette">
+              <div class="col-md-3">
+                <h2 class="featurette-heading fw-normal lh-1 whatTitle">Modules</h2>
+              </div>
+              <div class="col-md-7 whatText">
+                <div class="expitem">
+                  <div class="exptitle">Focal Analysis <a href="#">>>></a></div>
+                  <div class="expdesc">
+                    Local and global focal analysis functions.
+                    <ul>
                       <li>Math Algebra</li>
                       <li>Index Calculation</li>
                       <li>Filters</li>
                       <li>Consolutions (moving window)</li>
-                  </ul>
-              </div>
-            </div>
-            <div class="expitem">
-              <div class="exptitle">Transformation <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
-              <div class="expdesc">
-                Transformation and correction of rasters.
-                  <ul>
+                    </ul>
+                  </div>
+                </div>
+                <div class="expitem">
+                  <div class="exptitle">Transformation <a href="#">>>></a></div>
+                  <div class="expdesc">
+                    Transformation and correction of rasters.
+                    <ul>
                       <li>Rescale intensity (intensity correction)</li>
                       <li>Stack bands to raster</li>
                       <li>Stack a band to existing raster</li>
-                  </ul>
+                    </ul>
+                  </div>
+                </div>
+                <div class="expitem">
+                  <p class="exptitle">Vector <a href="#">>>></a></p>
+                  <div class="expdesc">
+                    Tools to work with vector type data.
+                    <ul>
+                        <li>Clip raster by polygon bbox</li>
+                        <li>Create raster chips from polygon bbox</li>
+                        <li>Raster to polygons</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="expitem">
+                  <div class="exptitle">Classify <a href="#">>>></a></div>
+                  <div class="expdesc">
+                    Tools to classify rasters.
+                    <ul>
+                      <li>Breaks classification (manual)</li>
+                      <li>Base+Steps classification (manual)</li>
+                      <li>Statistical classification (quantiles)</li>
+                      <li>Supervised classification</li>
+                      <li>Unsupervised classification</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="expitem">
+                  <div class="exptitle">Plot <a href="#">>>></a></div>
+                  <div class="expdesc">
+                    Tools to plot image and charts.
+                    <ul>
+                        <li>Plot raster with band combination</li>
+                        <li>Plot band and histogram</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="expitem">
-              <div class="exptitle">Vector <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
-              <div class="expdesc">
-                Tools to work with vector type data.
-                  <ul>
-                      <li>Clip raster by polygon bbox</li>
-                      <li>Create raster chips from polygon bbox</li>
-                      <li>Raster to polygons</li>
-                  </ul>
+            <hr class="featurette-divider">
+            <br>
+            <div class="row featurette">
+              <div class="col-md-3">
+                <h2 class="featurette-heading fw-normal lh-1 whatTitle">Dependences</h2>
+              </div>
+              <div class="col-md-7 whatText">
+                <div class="expitem">
+                  <div class="exptitle">Focal Analysis <a href="#">>>></a></div>
+                  <div class="expdesc">
+                    Python Libraries:
+                    <ul>
+                      <li>Pandas</li>
+                      <li>Geopandas</li>
+                      <li>Scikit-Image</li>
+                      <li>Scikit-Learn</li>
+                      <li>Matplotlib</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="expitem">
-              <div class="exptitle">Classify <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
-              <div class="expdesc">
-                Tools to classify rasters.
-                  <ul>
-                    <li>Breaks classification (manual)</li>
-                    <li>Base+Steps classification (manual)</li>
-                    <li>Statistical classification (quantiles)</li>
-                    <li>Supervised classification</li>
-                    <li>Unsupervised classification</li>
-                  </ul>
+            <hr class="featurette-divider">
+            <br>
+            <div class="row featurette">
+              <div class="col-md-3">
+                <h2 class="featurette-heading fw-normal lh-1 whatTitle">Examples</h2>
+              </div>
+              <div class="col-md-7 whatText">
+                <div class="expitem">
+                  <div class="exptitle">Examples of use <a href="#">>>></a></div>
+                  <div class="expdesc">
+                    Future list of examples.....
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="expitem">
-              <div class="exptitle">Plot <!-- <a href="https://ceeu.unsam.edu.ar/">>>></a> --></div>
-              <div class="expdesc">
-                Tools to plot image and charts.
-                  <ul>
-                      <li>Plot raster with band combination</li>
-                      <li>Plot band and histogram</li>
-                  </ul>
-              </div>
-            </div>
+            <hr class="featurette-divider">
           </div>
-        </section>
-        <section class="whatDescription">
-          <div class="whatTitle">Dependences</div><br>
-          <div class="whatText">
-            <div class="expitem">
-              <div class="exptitle">Python Libraries:</div>
-              <ul>
-                <li>Pandas</li>
-                <li>Geopandas</li>
-                <li>Scikit-Image</li>
-                <li>Scikit-Learn</li>
-                <li>Matplotlib</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="whatDescription">
-          <div class="whatTitle">Examples</div><br>
-          <div class="whatText">Exmples of use.-</div>
-        </section>
+          <hr class="featurette-divider" style="color:#212529">
     </main>
 </body>
+<script src="../../src/assets/dist/js/bootstrap.bundle.min.js"></script>
 </html>

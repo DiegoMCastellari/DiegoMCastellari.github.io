@@ -1,0 +1,103 @@
+main{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/*///////////////////////////////////// WHAT **********************************/
+main .name {
+    width: 70%;
+    height: auto;
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+main .name .phraseTitle{
+    font-size: 100px;
+    font-family: 'Bebas Neue', 'Anton', 'Oswald', sans-serif;
+    color: white;
+    z-index: 5;
+}
+main .name .phraseSubTitle{
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    color: #fec007;
+    z-index: 5;
+}
+main .name .phraseText {
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    color: #0098BE;
+    z-index: 5;
+}
+/*///////////////////////////////////// WHAT **********************************/
+main .whatDescription {
+    /* width: 70%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+main .whatTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #0098BE;
+}
+main .whatText {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+main .whatText li {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+main .whatText a {
+    color: #FEC007;
+}
+
+main .whatText .expitem {
+    padding-bottom: 10px;
+}
+main .whatText .expitem .exptitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #02C6B3;
+}
+main .whatText .expitem .expdesc {
+    font-size: 24px;
+    color: white;
+}
+main .whatText .expitem .expdesc ul{
+    padding-left: 24px;
+    font-weight: normal;
+}
+
+/*///////////////////////////////////// SOFTS **********************************/
+main .softimg {
+    padding: 5% 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+main .softimg .softimgitem {
+    height: 120px;
+    padding-left: 20px;
+}
