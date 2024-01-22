@@ -75,6 +75,33 @@ main .title .softwares img {
     margin: 15px;
 }
 
+
+@media (max-width: 800px) {
+    main .title .title_data .name {
+        font-size: 30px;
+    }
+    main .title .contractor {
+        font-size: 20px;
+    }
+    main .title .client {
+        font-size: 20px;
+    }
+    main .title .team {
+        font-size: 20px;
+    }
+    main .title .team  li {
+        font-size: 16px;
+    }
+
+    main .title .softwares {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    main .title .softwares img {
+        height: 40px;
+        margin: 5px;
+    }
+  }
 /***************************************************************************************/
 /**************************************** DESCRIPTION **********************************/
 main .intro {
@@ -95,7 +122,7 @@ main .intro .introImg{
     width: 100%;
 }
 main .intro .introText{
-    height: 350px;
+    /* height: 350px; */
     width: 100%;
     padding: 70px 20%; 
     display: flex;
@@ -104,7 +131,7 @@ main .intro .introText{
     align-items: flex-start;
     justify-content: center;
 }
-main .intro .introText p {
+main .intro .introText h2 {
     color: white;
     font-family: sans-serif;
     font-size: 25px;

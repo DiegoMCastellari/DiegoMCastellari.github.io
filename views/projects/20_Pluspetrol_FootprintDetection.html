@@ -22,40 +22,75 @@
 
 </head>
 <body>
-
-    <header>
-        <div class="headerLogo" onclick="javascript:location.href='../../index.html'">
-            <!-- <img class="headerLogoImg" src="../../src/image/logo/logo_dc_hexagon_bg.png" alt=""> -->
-            <div class="headerLogoText">DIEGO CASTELLARI</div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 10px 40px; ">
+        <a class="navbar-brand headerLogoText" href="../../index.html">DIEGO CASTELLARI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                <a class="nav-link navbutton" href="../../index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link navbutton" href="../aboutme.html">ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbutton" href="../cv.html">WHAT I DO</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link navbutton" href="../projects.html">WHAT I'VE DONE</a>
+                </li>
+            </ul>            
         </div>
-        <menu class="navmenu">
-            <button class="navbutton" onclick="javascript:location.href='../../index.html'">HOME</button>
-            <button class="navbutton" onclick="javascript:location.href='../aboutme.html'">ME</button>
-            <button class="navbutton" onclick="javascript:location.href='../cv.html'">WHAT I DO</button>
-            <button class="navbutton" onclick="javascript:location.href='../projects.html'">WHAT I'VE DONE</button>
-        </menu>
         <div class="headerNav">
             <div class="correo">agrimcastellari@gmail.com</div>
-            <!-- <a href=""><img class="iconIG" src="../../../src/image/icon/instagram.png" alt=""></a> -->
             <a href="https://github.com/DiegoMCastellari"><img class="iconGH" src="../../src/image/icon/github.png" alt=""></a>
             <a href="https://www.linkedin.com/in/diegocastellari/"><img class="iconLI" src="../../src/image/icon/linkedin.png" alt=""></a>
-            <!-- <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="../../../src/image/icon/Notion-logo.svg.png" alt=""></a> -->
-            <!-- <div class="headerContact"  onclick="javascript:location.href='contact.html'">Contact</div>
-            <img class="headerLangImg" src="../../src/image/icon/flagESP.png" alt="" onclick="javascript:location.href='../esp/servicios.html'">-->
-        </div> 
-    </header>
+            <a href="https://www.notion.so/Main-36df73c9a5134345b7807f99717bd5b5"><img class="iconLI" src="../../src/image/icon/Notion-logo.svg.png" alt=""></a>
+        </div>
+    </nav>
     <main>
 
+        <section class="title" style="background-image: url('../../src/image/projects/18_CEEU_BID_puente/bridge.JPGG');">
+            <div class="title_data">
+                <h1 class="name">Analysis of the Impact of a New Bridge</h1>
+                <h2 class="client">For: <a href="https://www.iadb.org/es">BID</a></h2>
+                <h2 class="contractor">With: <a href="https://ceeu.unsam.edu.ar/">CEEU</a></h2>
+                <h3 class="team"> Team:
+                    <ul>
+                        <li>Carolina Chantril - Project Leader</li>
+                        <li>Federico Catalano - Data Science</li>
+                        <li>Laura Fernandez - Urban Planner</li>
+                    </ul>
+                </h3>
+            </div>
+            <div class="softwares">
+                <img src="../../src/image/softwares/python.PNG" alt="">
+                <img src="../../src/image/softwares/pandas.PNG" alt="">
+                <img src="../../src/image/softwares/Geopandas.PNG" alt="">
+                <img src="../../src/image/softwares/rasterio.JPG" alt="">
+                <img src="../../src/image/softwares/scikitlearn_logo.png" alt="">
+                <img src="../../src/image/softwares/qgis.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="introText"> 
+                <h2>A new second bridge was near being started to connect the cities of Resistencia and Corrientes. Because there was no study and nobody knew the consecuences of the new bridge, we're asked to evaluate the socio-economic impact of it.</h2>
+            </div>
+        </section>
+        
         <section class="title" style="background-image: url('../../src/image/projects/20_Pluspetrol_FootprintDetection/indexes.JPG');">
             <div class="title_data">
-                <div class="name">Enviromental Impact Detection</div>
-                <div class="client">For: <a href="https://www.pluspetrol.net/">Pluspetrol</a></div>
-                <div class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></div>
-                <div class="team"> Team:
+                <h1 class="name">Enviromental Impact Detection</h1>
+                <h2 class="client">For: <a href="https://www.pluspetrol.net/">Pluspetrol</a></h2>
+                <h2 class="contractor">With: <a href="http://www.consultoraigeo.com.ar/">IGEO</a></h2>
+                <h3 class="team"> Team:
                     <ul>
                         <li>Elvio Perez - Lead</li>
                     </ul>
-                </div>
+                </h3>
             </div>
             <div class="softwares">
                 <img src="../../src/image/softwares/python.PNG" alt="">
@@ -66,7 +101,7 @@
 
         <section class="intro">
             <div class="introText"> 
-                <p>Due to the intervention of human activity, the natural vegetation in the production zones is destroy, mainly by new roads and facilities, while the enviromental team tries to recover areas out of production. Pluspetrol needed to know the yearly amount of enviromental inpact in the production zones, by detecting the area of natural vegetation affected by human activity and the area of recovered vegetation. The detection and measure of this changing areas was made using satellite images.</p>
+                <h2>Due to the intervention of human activity, the natural vegetation in the production zones is destroy, mainly by new roads and facilities, while the enviromental team tries to recover areas out of production. Pluspetrol needed to know the yearly amount of enviromental inpact in the production zones, by detecting the area of natural vegetation affected by human activity and the area of recovered vegetation. The detection and measure of this changing areas was made using satellite images.</h2>
             </div>
         </section>
 
