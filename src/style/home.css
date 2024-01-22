@@ -10,6 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    background-color: #212529;
 }
 
 /******************************** PHRASE */
@@ -28,7 +29,7 @@ body {
 .startWindow .phrase .phraseTitle{
     font-family: 'Bebas Neue', 'Anton', 'Oswald', sans-serif;
     font-size: 80px;
-    /* color: white; */
+    color: white;
     z-index: 5;
 }
 .startWindow .phrase .phraseSubTitle{
@@ -240,7 +241,6 @@ body .info {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    /* background-color: white; */
 }
 
 body .info .description {
